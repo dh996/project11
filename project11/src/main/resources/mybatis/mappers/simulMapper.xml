@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.5//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.SimulMapper">
+    
+    <insert id="createSimulList" parameterType="simulListVo">
+    
+        INSERT INTO simul_list
+        (
+            list_sid, list_player, list_date, list_winlose, list_version
+        )
+        VALUES
+        (
+            #{list_sid}, #{list_player}, now(), #{list_winlose}, #{list_version}
+        )
+    </insert>
+    
+    <insert id="insertSimulLog" parameterType="simulLogVo">
+    
+        INSERT INTO simul_logs
+        (
+            logs_sid, logs_fid, logs_tid, logs_message, logs_type, logs_visible
+        )
+        VALUES
+        (
+            #{logs_sid}, #{logs_fid}, #{logs_tid}, #{logs_message}, #{logs_type}, #{logs_visible}
+        )
+    </insert>
+    
+    <insert id="createTempID" parameterType="tempVo">
+    
+        INSERT INTO simul_temp
+        (
+            temp_tempid, temp_sid, temp_ip
+        )
+        VALUES
+        (
+            #{temp_tempid}, #{temp_sid}, #{temp_ip}
+        )
+    </insert>
+    
+    <insert id="createSimulData" parameterType="simulDataVo">
+    
+        INSERT INTO simul_data (
+            data_sid,
+            data_user_champ1, data_user_level1, data_user_kill1, data_user_death1, data_user_assist1,
+            data_user_champ2, data_user_level2, data_user_kill2, data_user_death2, data_user_assist2,
+            data_user_champ3, data_user_level3, data_user_kill3, data_user_death3, data_user_assist3,
+            data_user_champ4, data_user_level4, data_user_kill4, data_user_death4, data_user_assist4,
+            data_user_champ5, data_user_level5, data_user_kill5, data_user_death5, data_user_assist5,
+            data_enemy_champ1, data_enemy_level1, data_enemy_kill1, data_enemy_death1, data_enemy_assist1,
+            data_enemy_champ2, data_enemy_level2, data_enemy_kill2, data_enemy_death2, data_enemy_assist2,
+            data_enemy_champ3, data_enemy_level3, data_enemy_kill3, data_enemy_death3, data_enemy_assist3,
+            data_enemy_champ4, data_enemy_level4, data_enemy_kill4, data_enemy_death4, data_enemy_assist4,
+            data_enemy_champ5, data_enemy_level5, data_enemy_kill5, data_enemy_death5, data_enemy_assist5
+        ) VALUES (
+            #{data_sid},
+            #{data_user_champ1}, #{data_user_level1}, #{data_user_kill1}, #{data_user_death1}, #{data_user_assist1},
+            #{data_user_champ2}, #{data_user_level2}, #{data_user_kill2}, #{data_user_death2}, #{data_user_assist2},
+            #{data_user_champ3}, #{data_user_level3}, #{data_user_kill3}, #{data_user_death3}, #{data_user_assist3},
+            #{data_user_champ4}, #{data_user_level4}, #{data_user_kill4}, #{data_user_death4}, #{data_user_assist4},
+            #{data_user_champ5}, #{data_user_level5}, #{data_user_kill5}, #{data_user_death5}, #{data_user_assist5},
+            #{data_enemy_champ1}, #{data_enemy_level1}, #{data_enemy_kill1}, #{data_enemy_death1}, #{data_enemy_assist1},
+            #{data_enemy_champ2}, #{data_enemy_level2}, #{data_enemy_kill2}, #{data_enemy_death2}, #{data_enemy_assist2},
+            #{data_enemy_champ3}, #{data_enemy_level3}, #{data_enemy_kill3}, #{data_enemy_death3}, #{data_enemy_assist3},
+            #{data_enemy_champ4}, #{data_enemy_level4}, #{data_enemy_kill4}, #{data_enemy_death4}, #{data_enemy_assist4},
+            #{data_enemy_champ5}, #{data_enemy_level5}, #{data_enemy_kill5}, #{data_enemy_death5}, #{data_enemy_assist5}
+        )
+    </insert>
+    
+    <update id="modiftSimulListForResult" parameterType="simulListVo">
+        
+        UPDATE simul_list
+            SET list_winlose = #{list_winlose}, list_player = #{list_player}
+            WHERE list_sid = #{list_sid}
+    
+    </update>
+    
+    <select id="getSimulList" parameterType="java.lang.String" resultType="simulListVo">
+        SELECT * FROM simul_list WHERE list_sid = #{sid}
+    </select>
+    
+    <select id="getSimulData" parameterType="java.lang.String" resultType="simulDataVo">
+        SELECT * FROM simul_data WHERE data_sid = #{sid}
+    </select>
+    
+    <select id="getSimulLogs" parameterType="java.lang.String" resultType="simulLogVo">
+        SELECT * FROM simul_logs WHERE logs_sid = #{sid} ORDER BY lid ASC
+    </select>
+    
+    <select id="getSid" parameterType="java.lang.String" resultType="tempVo">
+        SELECT * FROM simul_temp WHERE temp_tempid = #{tempID}
+    </select>
+    
+    <!-- <select id="getAllSimulListDataForAdmin" resultType="simulListDataVo">
+        SELECT simul_list.*, simul_data.*
+        FROM simul_list
+        INNER JOIN simul_data ON simul_list.list_sid = simul_data.data_sid
+        ORDER BY simul_list.list_date DESC;
+    </select> -->
+    
+    <!-- <select id="getAllSimulListDataForUser" parameterType="java.lang.String" resultType="simulListDataVo">
+        SELECT simul_list.*, simul_data.*
+        FROM simul_list
+        INNER JOIN simul_data ON simul_list.list_sid = simul_data.data_sid
+        WHERE simul_list.list_player = #{userID}
+        ORDER BY simul_list.list_date DESC;
+    </select> -->
+    
+    <select id="getAllSimulListForAdmin" resultType="simulListVo">
+        SELECT simul_list.*
+        FROM simul_list
+        ORDER BY simul_list.list_date DESC;
+    </select>
+    
+    <select id="getAllSimulListForUser" parameterType="java.lang.String" resultType="simulListVo">
+        SELECT simul_list.*
+        FROM simul_list
+        WHERE list_player = #{userID}
+        ORDER BY simul_list.list_date DESC;
+    </select>
+    
+    <select id="getAllSimulData" resultType="simulDataVo">
+        SELECT simul_data.*
+        FROM simul_data
+    </select>
+    
+    <delete id="delTempId" parameterType="java.lang.String">
+        DELETE FROM simul_temp WHERE temp_ip = #{ip}
+    </delete>
+
+</mapper>

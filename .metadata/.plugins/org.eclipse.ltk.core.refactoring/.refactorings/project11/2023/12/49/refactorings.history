@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;dh.project11.packs.simul.object.LogMessage.java&apos; to &apos;SimulLogMessage.java&apos;&#x0D;&#x0A;- Original project: &apos;project11&apos;&#x0D;&#x0A;- Original element: &apos;dh.project11.packs.simul.object.LogMessage.java&apos;&#x0D;&#x0A;- Renamed element: &apos;dh.project11.packs.simul.object.SimulLogMessage.java&apos;" description="Rename compilation unit &apos;LogMessage.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;dh.project11.packs.simul.object{LogMessage.java" name="SimulLogMessage.java" references="false" stamp="1701662542770" version="1.0"/>
+</session>

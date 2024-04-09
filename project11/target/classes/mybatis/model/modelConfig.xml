@@ -1,0 +1,18 @@
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.5//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <typeAliases>
+        <typeAlias type="dh.project11.packs.admin.UpdateChampsVo" alias="updateChampsVo"/>
+        <typeAlias type="dh.project11.packs.admin.UpdateSkinsVo" alias="updateSkinsVo"/>
+        <typeAlias type="dh.project11.packs.admin.UpdateStatsVo" alias="updateStatsVo"/>
+        <typeAlias type="dh.project11.packs.simul.object.SimulDataVo" alias="simulDataVo"/>
+        <typeAlias type="dh.project11.packs.simul.object.SimulListVo" alias="simulListVo"/>
+        <typeAlias type="dh.project11.packs.simul.object.SimulLogVo" alias="simulLogVo"/>
+        <typeAlias type="dh.project11.packs.simul.object.SimulListDataVo" alias="simulListDataVo"/>
+        <typeAlias type="dh.project11.packs.simul.object.TempVo" alias="tempVo"/>
+    </typeAliases>
+    
+</configuration>

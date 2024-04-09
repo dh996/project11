@@ -1,0 +1,7 @@
+127.0.0.1 - - [26/Dec/2023:15:46:50 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:15:46:55 +0900] "GET /packs/WEB-INF/classes/dh/project11/packs/admin/AdminDao.java HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:15:46:55 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:15:47:04 +0900] "GET /packs/simul/home HTTP/1.1" 200 60940
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:15:47:17 +0900] "POST /packs/simul/simulStart HTTP/1.1" 200 128
+127.0.0.1 - - [26/Dec/2023:17:04:52 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [26/Dec/2023:17:05:15 +0900] "GET /packs/simul/home HTTP/1.1" 200 60940

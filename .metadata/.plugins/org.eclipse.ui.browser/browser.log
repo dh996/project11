@@ -1,0 +1,18 @@
+
+12월 07, 2023 11:24:14.84 NEW SESSION
+12월 07, 2023 11:24:14.84 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+
+12월 14, 2023 10:50:51.328 NEW SESSION
+12월 14, 2023 10:50:51.329 [14476:17496:1214/105051.326:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+12월 14, 2023 11:28:02.845 [14476:17496:1214/112802.845:ERROR:connection_factory_impl.cc(471)] ConnectionHandler failed with net error: -2
+12월 14, 2023 11:28:04.315 [14476:17496:1214/112804.314:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -105
+12월 14, 2023 11:28:04.649 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+12월 14, 2023 11:28:05.391 [14476:17496:1214/112805.391:ERROR:connection_factory_impl.cc(428)] Failed to connect to MCS endpoint with error -106
+12월 14, 2023 14:55:18.06 [14476:9192:1214/145518.005:ERROR:interface_endpoint_client.cc(702)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+2월 21, 2024 02:32:18.526 NEW SESSION
+2월 21, 2024 02:32:18.526 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 21, 2024 03:09:57.915 [6652:6060:0221/030957.915:ERROR:CONSOLE(1)] "Request Network.loadNetworkResource failed. {"code":-32602,"message":"Unsupported URL scheme"}", source: devtools://devtools/bundled/devtools-frontend/front_end/core/protocol_client/protocol_client.js (1)
+
+3월 14, 2024 05:08:14.634 NEW SESSION
+3월 14, 2024 05:08:14.634 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
