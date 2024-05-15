@@ -97,22 +97,21 @@ public class SimulDefaultSetting {
 		            	flag = false;
 		            	break;
 		            }
-		    case 1: if(champs_tags.contains("Support")) {
-		    	        flag = false;
+		    case 1: if(champs_tags.contains("Fighter") || champs_tags.contains("Assassin")) {
+		    	        flag = true;
 		    	        break;
                     }else {
-                    	flag = true;
+                    	flag = false;
                     	break;
                     }
-		    case 2: if(champs_tags.contains("Mage") || champs_tags.contains("Assassin")
-		    		|| champs_tags.contains("Fighter")) {
+		    case 2: if(champs_tags.contains("Mage")) {
                     	flag = true;
                     	break;
                     }else {
                     	flag = false;
                     	break;
                     }
-		    case 3: if(champs_tags.contains("Marksman") || champs_tags.contains("Mage")) {
+		    case 3: if(champs_tags.contains("Marksman")) {
                     	flag = true;
                     	break;
                     }else {
@@ -204,7 +203,7 @@ public class SimulDefaultSetting {
 			teamPositionLog.add(simulLogging.resetPositionLogging(
 					teamList.get(i).getChamps_name(), build, type));
 		}
-		teamInfo.setTeamLog(teamPositionLog);
+	//	teamInfo.setTeamLog(teamPositionLog);
 		return teamInfo;
 	}
 	

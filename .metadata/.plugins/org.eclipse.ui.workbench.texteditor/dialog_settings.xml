@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Random"/>
+		<item key="selection" value="list"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="list.simulListVo"/>
+			<item value="list.simulDataVo"/>
 			<item value="random"/>
 			<item value="simulService.delTempId(userID);"/>
 			<item value="assait"/>
@@ -21,10 +23,10 @@
 			<item value="resetPositionBuild"/>
 			<item value="active"/>
 			<item value="확인"/>
-			<item value="변수확인"/>
-			<item value="battle1.size"/>
 		</list>
 		<list key="replacehistory">
+			<item value="list"/>
+			<item value="data"/>
 			<item value="assist"/>
 			<item value="message"/>
 			<item value="Assassin"/>

@@ -9,6 +9,7 @@ import java.io.OutputStream;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -74,7 +75,7 @@ public class AdminMainController {
 	    	try {
 	    		ResponseEntity<String> response = restTemplate.getForEntity(apiUrl, String.class);
 	            keyData = adminService.versionUpdate(response, version);
-	            
+	            createImgFolder(version);
 	            String jsonString = response.getBody();
 	            setUpdata(jsonString);
 	            model.addAttribute("keyData", keyData);
@@ -123,17 +124,22 @@ public class AdminMainController {
                 champData.setTags((List<String>) valueMap.get("tags"));
                 champData.setStats((Map<String, Float>) valueMap.get("stats"));
                 updateData.setChampData(champData);
+                imgDownload(version, keys.get(i), (String) valueMap.get("name"));
+                System.out.println("이미지 다운로드중 " + i + "/" + keys.size());
 
                 try {
                     adminService.uploadChampData(updateData);
                 } catch (Exception e2) {
                     e2.printStackTrace();
                 }
+                
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
-            
-            for(int i=0; i<data.size(); i++) {
-            	
-            }
+            System.out.println("데이터 저장 완료");
 	    } catch (Exception e) {
 	        e.printStackTrace();
 	    }
@@ -192,6 +198,57 @@ public class AdminMainController {
     
         return updateData;
     }
+	
+	public void createImgFolder(String version) {
+        String folderPath = "C:/Dev/workspaces/project11/project11/src/main/webapp/resources/img/" + version;
+        File folder = new File(folderPath);
+        checkAndMakeFolder(folder);
+        
+        String folderPath2 = "C:/Dev/workspaces/project11/project11/src/main/webapp/resources/img/" + version + "/splash";
+        File folder2 = new File(folderPath2);
+        checkAndMakeFolder(folder2);
+        
+        String folderPath3 = "C:/Dev/workspaces/project11/project11/src/main/webapp/resources/img/" + version + "/sqaure";
+        File folder3 = new File(folderPath3);
+        checkAndMakeFolder(folder3);
+	}
+	
+	public void checkAndMakeFolder(File folder) {
+		
+		if (!folder.exists()) {
+            // 폴더가 존재하지 않으면 폴더를 생성
+            if (folder.mkdirs()) {
+                System.out.println("폴더가 생성되었습니다.");
+            } else {
+                System.err.println("폴더 생성에 실패했습니다.");
+            }
+        } else {
+            System.out.println("폴더가 이미 존재합니다.");
+        }
+	}
+	
+	public void imgDownload(String version, String id, String name) {
+		
+		String imageUrlSplash = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/"+id+"_0.jpg"; // 다운로드할 이미지 URL
+		String imageUrlSqaure = "https://ddragon.leagueoflegends.com/cdn/14.8.1/img/champion/"+id+".png"; // 다운로드할 이미지 URL
+        String destinationFileSplash = "C:/Dev/workspaces/project11/project11/src/main/webapp/resources/img/" + version + "/splash/" + name + ".jpg"; // 저장할 파일 경로와 이름
+        String destinationFileSqaure = "C:/Dev/workspaces/project11/project11/src/main/webapp/resources/img/" + version + "/sqaure/" + name + ".png"; // 저장할 파일 경로와 이름
+
+        downImgTry(imageUrlSplash, destinationFileSplash);
+        downImgTry(imageUrlSqaure, destinationFileSqaure);     
+	}
+	
+	public void downImgTry(String imageUrl, String destinationFile) {
+		try {
+            // URL에서 이미지 읽어오기
+            URL url = new URL(imageUrl);
+            InputStream inputStream = url.openStream();
+            Files.copy(inputStream, Paths.get(destinationFile), StandardCopyOption.REPLACE_EXISTING);
+            System.out.println("이미지 다운로드 완료: " + destinationFile);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+	}
 	
 	//@RequestMapping(value = "/versionup.img", method = {RequestMethod.GET, RequestMethod.POST})
 	//@ResponseBody

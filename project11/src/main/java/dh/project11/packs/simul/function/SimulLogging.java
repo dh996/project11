@@ -29,7 +29,7 @@ public class SimulLogging {
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 0);
+		simulService.messageLogging(message, sid, fid, tid, 0, 0, "x", "x");
 		return message;
 	}
 	
@@ -45,7 +45,7 @@ public class SimulLogging {
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 1);
+		simulService.messageLogging(message, sid, fid, tid, 1, 0, "x", "x");
 		return message;
 	}
 	
@@ -61,7 +61,7 @@ public class SimulLogging {
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 1);
+		simulService.messageLogging(message, sid, fid, tid, 1, 0, "x", "x");
 		return message;
 	}
 	
@@ -71,11 +71,11 @@ public class SimulLogging {
 		message.setMessage(count+"번째 전장: "+battleField);
 		System.out.println("로그입니다   "+message.getMessage());
 		message.setType(2);
-		simulService.messageLogging(message, sid, fid, tid, 0);
+		simulService.messageLogging(message, sid, fid, tid, 0, count, "field", battleField);
 		return message;
 	}
 
-	public SimulLogMessage levelUpLogging(int level, String champName, boolean type) {
+	public SimulLogMessage levelUpLogging(int level, String champName, boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
@@ -87,11 +87,11 @@ public class SimulLogging {
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 1);
+		simulService.messageLogging(message, sid, fid, tid, 1, turnCount, "x", "x");
 		return message;
 	}
 
-	public SimulLogMessage initLogging(String name, boolean type) {
+	public SimulLogMessage initLogging(String name, boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
@@ -103,27 +103,28 @@ public class SimulLogging {
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 1);
+		simulService.messageLogging(message, sid, fid, tid, 1, turnCount, "x", "x");
 		return message;
 	}
 
-	public SimulLogMessage champDead(String name, String killer, boolean type) {
+	public SimulLogMessage champDead(String name, String killer, boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
 			message.setMessage("적군 팀 "+name+" 이(가) "+killer+" 에 의해 사망");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(0);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "e", name);
 		}else {
 			message.setMessage("아군 팀 "+name+" 이(가) "+killer+" 에 의해 사망");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "u", name);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 0);
 		return message;
 	}
 
-	public SimulLogMessage towerAttack(String name, boolean type) {
+	public SimulLogMessage towerAttack(String name, boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
@@ -135,11 +136,11 @@ public class SimulLogging {
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 1);
+		simulService.messageLogging(message, sid, fid, tid, 1, turnCount, "x", "x");
 		return message;
 	}
 
-	public SimulLogMessage champAttack(String name, String killer, int damage, boolean type) {
+	public SimulLogMessage champAttack(String name, String killer, int damage, boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
@@ -151,105 +152,109 @@ public class SimulLogging {
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 1);
+		simulService.messageLogging(message, sid, fid, tid, 1, turnCount, "x", "x");
 		return message;
 	}
 
-	public SimulLogMessage spawnBaronLogging() {
+	public SimulLogMessage spawnBaronLogging(int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		message.setMessage("내셔 남작이 생성되었습니다");
 		System.out.println("로그입니다   "+message.getMessage());
 		message.setType(2);
-		simulService.messageLogging(message, sid, fid, tid, 0);
+		simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "baron", "x");
 		return message;
 	}
 
-	public SimulLogMessage spawnDragonLogging(int dragonCount) {
+	public SimulLogMessage spawnDragonLogging(int dragonCount, String elemental, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
-		message.setMessage(dragonCount+"번째 드래곤이 생성되었습니다");
+		message.setMessage(dragonCount+"번째 드래곤이 생성되었습니다 이번 드래곤은 " + elemental + " 드래곤입니다");
 		System.out.println("로그입니다   "+message.getMessage());
 		message.setType(2);
-		simulService.messageLogging(message, sid, fid, tid, 0);
+		simulService.messageLogging(message, sid, fid, tid, 0, turnCount, elemental, "x");
 		return message;
 	}
 
-	public SimulLogMessage spawnElderLogging() {
+	public SimulLogMessage spawnElderLogging(int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		message.setMessage("장로 드래곤이 생성되었습니다");
 		System.out.println("로그입니다   "+message.getMessage());
 		message.setType(2);
-		simulService.messageLogging(message, sid, fid, tid, 0);
+		simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "elder", "x");
 		return message;
 	}
 
-	public SimulLogMessage killElder(boolean type) {
+	public SimulLogMessage killElder(boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
 			message.setMessage("아군 팀이 장로 드래곤을 처치했습니다");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(0);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "u", "elder");
 		}else {
 			message.setMessage("적군 팀이 장로 드래곤을 처치했습니다");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "e", "elder");
 		}
-		simulService.messageLogging(message, sid, fid, tid, 0);
 		return message;
 	}
 
-	public SimulLogMessage killBaron(boolean type) {
+	public SimulLogMessage killBaron(boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
 			message.setMessage("아군 팀이 내셔 남작을 처치했습니다");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(0);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "u", "baron");
 		}else {
 			message.setMessage("적군 팀이 내셔 남작을 처치했습니다");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "e", "baron");
 		}
-		simulService.messageLogging(message, sid, fid, tid, 0);
 		return message;
 	}
 
-	public SimulLogMessage killDragon(boolean type) {
+	public SimulLogMessage killDragon(boolean type, String elemental, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
-			message.setMessage("아군 팀이 드래곤을 처치했습니다");
+			message.setMessage("아군 팀이 " + elemental + " 드래곤을 처치했습니다");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(0);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "u", "dragon");
 		}else {
-			message.setMessage("적군 팀이 드래곤을 처치했습니다");
+			message.setMessage("적군 팀이 " + elemental + " 드래곤을 처치했습니다");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "e", "dragon");
 		}
-		simulService.messageLogging(message, sid, fid, tid, 0);
 		return message;
 	}
 
-	public SimulLogMessage destroyTower(String string, boolean type) {
+	public SimulLogMessage destroyTower(String string, boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
 			message.setMessage("아군 팀이 적의 "+string+" 을 파괴했습니다");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(0);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "e", string);
 		}else {
 			message.setMessage("적군 팀이 아군의 "+string+" 을 파괴했습니다");
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
+			simulService.messageLogging(message, sid, fid, tid, 0, turnCount, "u", string);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 0);
 		return message;
 	}
 
-	public SimulLogMessage attackTower(String string, int i, boolean type) {
+	public SimulLogMessage attackTower(String string, int i, boolean type, int turnCount) {
 		// TODO Auto-generated method stub
 		SimulLogMessage message = new SimulLogMessage();
 		if(type==true) {
@@ -261,25 +266,25 @@ public class SimulLogging {
 			System.out.println("로그입니다   "+message.getMessage());
 			message.setType(1);
 		}
-		simulService.messageLogging(message, sid, fid, tid, 1);
+		simulService.messageLogging(message, sid, fid, tid, 1, turnCount, "x", "x");
 		return message;
 	}
 
-	public SimulLogMessage freePassLine(String string, boolean type) {
-		// TODO Auto-generated method stub
-		SimulLogMessage message = new SimulLogMessage();
-		if(type==true) {
-			message.setMessage("아군 팀이 적의 "+string+"라인의 억제기까지 파괴를 성공하였습니다");
-			System.out.println("로그입니다   "+message.getMessage());
-			message.setType(0);
-		}else {
-			message.setMessage("적군 팀이 아군의 "+string+"라인의 억제기까지 파괴를 성공하였습니다");
-			System.out.println("로그입니다   "+message.getMessage());
-			message.setType(1);
-		}
-		simulService.messageLogging(message, sid, fid, tid, 0);
-		return message;
-	}
+//	public SimulLogMessage freePassLine(String string, boolean type) {
+//		// TODO Auto-generated method stub
+//		SimulLogMessage message = new SimulLogMessage();
+//		if(type==true) {
+//			message.setMessage("아군 팀이 적의 "+string+"라인의 억제기까지 파괴를 성공하였습니다");
+//			System.out.println("로그입니다   "+message.getMessage());
+//			message.setType(0);
+//		}else {
+//			message.setMessage("적군 팀이 아군의 "+string+"라인의 억제기까지 파괴를 성공하였습니다");
+//			System.out.println("로그입니다   "+message.getMessage());
+//			message.setType(1);
+//		}
+//		simulService.messageLogging(message, sid, fid, tid, 0);
+//		return message;
+//	}
 
 	public String getSid() {
 		return sid;

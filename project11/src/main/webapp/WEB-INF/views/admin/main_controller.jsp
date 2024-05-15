@@ -5,8 +5,60 @@
 <head>
 <meta charset="UTF-8">
 <title>메인 컨트롤러</title>
+<style>
+.flex{
+    display:flex;
+}
+* {
+    cursor: default;
+}
+a {
+    color: inherit; /* 링크의 색을 부모 요소에서 상속 */
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    cursor: pointer;
+}
+#background{
+    width: 100%;
+    height: 940px;
+    background-size: cover; /* 이미지가 요소에 맞게 확장되도록 설정합니다. */
+    background-position: center; /* 이미지를 가운데 정렬합니다. */
+    background-repeat: no-repeat; /* 이미지 반복을 비활성화합니다. */
+    transition: background-image 1s ease-in-out;
+}
+#background.background1 {
+    background-image: url('/packs/resources/img/main/back1.jpg');
+}
+#background.background2 {
+    background-image: url('/packs/resources/img/main/back2.jpg');
+}
+#background.background3 {
+    background-image: url('/packs/resources/img/main/back3.jpg');
+}
+#background.background4 {
+    background-image: url('/packs/resources/img/main/back4.jpg');
+}
+#background.background5 {
+    background-image: url('/packs/resources/img/main/back5.jpg');
+}
+#background.background6 {
+    background-image: url('/packs/resources/img/main/back6.jpg');
+}
+#ui{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#blank{
+    height: 200px;
+}
+</style>
 </head>
 <body>
+<article id="background" class="background1">
+<div id="blank"></div>
+<div id="ui">
     <header>
         <div id="mcHeader">
              <div id="settingVersion"></div>
@@ -64,5 +116,28 @@
     }
 %>
     </article>
+</div>
+</article>
+<script>
+        var jQ = jQuery.noConflict();
+        
+        var nowImg = 1;
+        function changeBack(){
+        	var backImg = Math.floor(Math.random() * 6) + 1;
+        	if(backImg != nowImg){
+            	setBack(backImg);
+        	}else{
+        		console.log("배경이미지 중복탐지");
+        		changeBack();
+        	}
+        }
+        
+        function setBack(backImg){
+        	nowImg = backImg;
+        	jQ("#background").removeClass();
+        	jQ("#background").addClass("background" + backImg);
+        }
+        setInterval(changeBack, 5000);
+    </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-!SESSION 2024-03-30 20:09:43.598 -----------------------------------------------
+!SESSION 2024-05-10 02:35:29.283 -----------------------------------------------
 eclipse.buildId=4.19.0.I20210303-1800
 java.version=11.0.20
 java.vendor=Oracle Corporation
@@ -7,9 +7,9 @@ Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
 This is a continuation of log file C:\Dev\workspaces\project11\.metadata\.bak_0.log
-Created Time: 2024-03-30 20:16:44.291
+Created Time: 2024-05-10 03:46:47.652
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:44.293
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.652
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -48,7 +48,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:44.295
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.659
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -87,7 +87,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:44.301
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.667
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -126,7 +126,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:44.309
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.675
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -165,7 +165,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:44.318
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.683
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -204,7 +204,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:44.325
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.691
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -243,7 +243,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:44.334
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.699
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -282,7 +282,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:44.342
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.707
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -321,7 +321,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.039
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.715
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -360,7 +360,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.047
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.724
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -399,7 +399,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.054
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.732
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -438,7 +438,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.061
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.739
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -477,7 +477,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.077
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.747
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -516,7 +516,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.084
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:47.755
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -555,7 +555,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.093
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.069
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -594,7 +594,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.101
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.076
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -633,7 +633,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.109
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.085
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -672,7 +672,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.117
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.092
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -711,7 +711,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.125
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.101
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -750,7 +750,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:45.133
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.117
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -789,7 +789,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.126
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.125
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -828,7 +828,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.133
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.133
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -867,7 +867,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.141
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.149
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -906,7 +906,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.150
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.165
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -945,7 +945,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.158
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.181
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -984,7 +984,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.166
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.197
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1023,7 +1023,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.173
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.222
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1062,7 +1062,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.182
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.252
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1101,7 +1101,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.190
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.260
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1140,7 +1140,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.198
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.268
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1179,7 +1179,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.205
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.284
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1218,7 +1218,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.222
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.300
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1257,7 +1257,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.229
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.308
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1296,7 +1296,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.237
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.316
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1335,7 +1335,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.246
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.324
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1374,7 +1374,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.263
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.339
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1413,7 +1413,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.280
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.347
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1452,7 +1452,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.286
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.356
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1491,7 +1491,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.294
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.366
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1530,7 +1530,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.301
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:50.372
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1569,7 +1569,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.309
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.310
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1608,7 +1608,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.316
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.317
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1647,7 +1647,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.324
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.326
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1686,7 +1686,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.332
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.334
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1725,7 +1725,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.341
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.341
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1764,7 +1764,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.349
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.349
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1803,7 +1803,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.357
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.357
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1842,7 +1842,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.364
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.365
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1881,7 +1881,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.372
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.371
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1920,7 +1920,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.380
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.380
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1959,7 +1959,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.615
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.388
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -1998,7 +1998,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.621
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.405
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2037,7 +2037,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.628
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.413
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2076,7 +2076,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.636
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.439
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2115,7 +2115,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.652
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.459
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2154,7 +2154,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.660
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.485
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2193,7 +2193,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.668
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:52.493
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2232,7 +2232,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.676
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.075
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2271,7 +2271,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.684
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.092
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2310,7 +2310,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.693
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.109
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2349,7 +2349,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.708
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.125
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2388,7 +2388,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.717
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.135
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2427,7 +2427,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.725
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.139
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2466,7 +2466,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.733
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.147
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2505,7 +2505,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.740
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.156
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2544,7 +2544,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.748
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.164
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2583,7 +2583,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.764
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.173
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2622,7 +2622,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.982
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:53.181
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2661,7 +2661,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.990
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.543
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2700,7 +2700,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:47.998
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.549
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2739,7 +2739,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:16:48.006
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.556
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2778,7 +2778,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:40.894
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.565
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2817,7 +2817,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:40.898
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.573
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2856,7 +2856,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:40.910
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.582
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2895,7 +2895,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:41.079
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.589
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2934,7 +2934,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:41.087
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.598
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -2973,7 +2973,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:41.094
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.605
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3012,7 +3012,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:41.103
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.613
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3051,7 +3051,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:41.110
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.631
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3090,7 +3090,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:41.116
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.654
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3129,7 +3129,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:44.980
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.670
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3168,7 +3168,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:45.004
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.678
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3207,7 +3207,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:45.110
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.685
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3246,7 +3246,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:46.885
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.692
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3285,7 +3285,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:46.893
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.699
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3324,7 +3324,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:19:46.901
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.708
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3363,7 +3363,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:57:07.087
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.717
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3402,7 +3402,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:57:07.095
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.724
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3441,7 +3441,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:57:07.103
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.736
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3480,7 +3480,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:57:07.110
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.830
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3519,7 +3519,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:57:07.119
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.837
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3558,7 +3558,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:57:07.126
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.845
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3597,7 +3597,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:59:06.264
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.851
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3636,7 +3636,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:59:06.272
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:46:55.860
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3675,7 +3675,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 20:59:06.291
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:03.296
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3714,7 +3714,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.669
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:03.296
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3753,7 +3753,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.695
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:03.300
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3792,7 +3792,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.735
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:03.308
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3831,7 +3831,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.760
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:03.365
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3870,7 +3870,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.837
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:03.373
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3909,7 +3909,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.853
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:03.380
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3948,7 +3948,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.868
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:03.390
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -3987,7 +3987,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.880
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:15.093
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4026,7 +4026,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.894
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:15.101
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4065,7 +4065,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.901
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:15.109
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4104,7 +4104,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.911
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:15.117
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4143,7 +4143,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.919
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:15.125
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4182,7 +4182,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.926
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:15.132
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4221,7 +4221,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.934
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:15.140
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4260,7 +4260,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.940
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.628
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4299,7 +4299,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.949
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.635
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4338,7 +4338,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.958
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.643
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4377,7 +4377,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:42.967
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.651
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4416,7 +4416,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:43.317
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.659
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4455,7 +4455,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:02:43.325
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.791
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4494,7 +4494,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:03:46.273
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.797
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4533,7 +4533,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:03:46.281
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.806
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4572,7 +4572,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:03:46.296
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.813
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4611,7 +4611,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:03:46.303
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.821
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4650,7 +4650,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:03:46.799
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.838
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4689,7 +4689,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:03:46.808
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.868
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4728,7 +4728,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:05:42.153
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:16.876
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4767,7 +4767,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:05:42.167
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.493
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4806,7 +4806,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:05:42.175
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.501
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4845,7 +4845,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:05:42.183
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.508
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4884,7 +4884,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:05:42.190
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.516
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4923,7 +4923,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:05:42.198
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.524
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -4962,7 +4962,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:05:42.206
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.533
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5001,7 +5001,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:05:42.214
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.540
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5040,59 +5040,17 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:05:43.041
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:05:43.057
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:08:03.365
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:08:03.367
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:08:14.900
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:08:14.901
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:08:19.185
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:08:19.186
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:09:40.134
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:09:40.135
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:10:22.150
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:10:22.152
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:11:53.027
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:11:53.029
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:25:30.475
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.548
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.jdt.internal.ui.text.JavaWordFinder.findWord(JavaWordFinder.java:39)
-	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverRegion(AbstractJavaEditorTextHover.java:94)
-	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverRegion(JavaEditorTextHoverProxy.java:65)
-	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
-	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
-	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinks(JavaElementHyperlinkDetector.java:98)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
@@ -5121,7 +5079,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:33.017
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.559
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5160,7 +5118,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:33.022
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.563
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5199,7 +5157,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:33.030
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.571
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5238,7 +5196,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:34.646
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.579
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5277,7 +5235,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:34.653
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.587
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5316,7 +5274,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:34.662
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.595
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5355,7 +5313,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:34.670
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.603
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5394,7 +5352,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:34.677
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.611
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5433,7 +5391,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:34.686
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:17.620
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5472,7 +5430,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:26:34.789
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.237
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5511,7 +5469,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:35:48.613
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.245
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5550,7 +5508,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:35:48.621
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.253
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5589,7 +5547,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:35:48.629
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.261
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5628,7 +5586,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:35:48.637
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.268
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5667,7 +5625,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:35:51.430
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.275
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5706,17 +5664,17 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:03.486
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.291
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.jdt.internal.ui.text.JavaWordFinder.findWord(JavaWordFinder.java:39)
-	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverRegion(AbstractJavaEditorTextHover.java:94)
-	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverRegion(JavaEditorTextHoverProxy.java:65)
-	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
-	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
-	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinks(JavaElementHyperlinkDetector.java:98)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
@@ -5745,7 +5703,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:03.972
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.302
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5784,7 +5742,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:03.981
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.307
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5823,7 +5781,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:03.989
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.317
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5862,7 +5820,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:03.997
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.323
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5901,7 +5859,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:04.006
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.333
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5940,7 +5898,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:04.013
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.360
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -5979,7 +5937,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:04.022
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.361
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6018,7 +5976,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:36:04.031
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.371
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6056,20 +6014,8 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:36:04.539
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:36:04.541
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:36:09.303
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:36:09.305
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.644
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.381
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6108,7 +6054,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.648
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.398
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6147,7 +6093,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.655
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.414
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6186,7 +6132,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.661
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.424
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6225,7 +6171,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.669
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.428
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6264,7 +6210,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.677
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.437
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6303,7 +6249,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.685
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.963
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6342,7 +6288,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.693
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.971
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6381,7 +6327,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:07.701
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.979
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6420,7 +6366,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:08.609
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.988
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6459,7 +6405,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:08.613
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:18.995
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6498,7 +6444,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:08.623
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:19.003
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6537,7 +6483,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:08.631
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:19.067
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6576,7 +6522,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:08.639
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:19.075
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6615,7 +6561,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:08.647
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.618
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6654,7 +6600,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:18.053
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.620
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6693,7 +6639,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:18.061
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.630
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6732,7 +6678,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:18.070
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.637
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6771,7 +6717,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:32.357
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.645
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6810,7 +6756,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:32.374
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.652
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6849,7 +6795,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:32.381
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.660
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6888,7 +6834,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.031
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.668
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6927,7 +6873,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.039
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.676
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -6966,7 +6912,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.046
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.684
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7005,7 +6951,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.055
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.692
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7044,7 +6990,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.061
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.700
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7083,7 +7029,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.069
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.708
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7122,7 +7068,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.077
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.715
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7161,7 +7107,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.085
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.723
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7200,7 +7146,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.093
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.732
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7239,7 +7185,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.101
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.740
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7278,7 +7224,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.118
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.748
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7317,7 +7263,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.207
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.756
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7356,7 +7302,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.217
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.764
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7395,7 +7341,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.238
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.772
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7434,7 +7380,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.239
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.870
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7473,7 +7419,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:40:56.245
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.878
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7511,14 +7457,8 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:43:22.121
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:43:22.123
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.176
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.901
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7557,7 +7497,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.182
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.901
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7596,7 +7536,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.191
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.907
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7635,7 +7575,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.214
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.915
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7674,7 +7614,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.230
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.923
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7713,7 +7653,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.239
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.932
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7752,7 +7692,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.247
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.940
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7791,7 +7731,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.254
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.948
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7830,7 +7770,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.262
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:22.956
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7869,7 +7809,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.270
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.540
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7908,7 +7848,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.278
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.548
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7947,7 +7887,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.285
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.564
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -7986,7 +7926,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.293
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.572
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8025,7 +7965,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.303
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.579
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8064,7 +8004,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.309
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.588
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8103,7 +8043,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.317
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.595
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8142,7 +8082,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.326
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.603
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8181,7 +8121,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.334
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.611
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8220,7 +8160,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.343
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.620
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8259,7 +8199,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.350
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.628
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8298,7 +8238,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.359
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.636
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8337,7 +8277,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.366
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.644
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8376,7 +8316,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.407
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.652
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8415,7 +8355,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.414
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.660
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8454,7 +8394,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.424
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.667
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8493,7 +8433,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.431
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.676
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8532,7 +8472,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.439
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.684
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8571,7 +8511,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.447
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.693
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8610,7 +8550,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:13.454
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.701
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8649,7 +8589,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.717
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.709
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8688,7 +8628,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.727
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.718
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8727,7 +8667,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.735
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.726
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8766,7 +8706,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.742
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.733
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8805,7 +8745,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.750
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.742
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8844,7 +8784,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.759
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.749
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8883,7 +8823,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.767
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.757
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8922,7 +8862,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.849
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.765
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -8961,7 +8901,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.852
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.777
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9000,7 +8940,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.855
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.781
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9039,7 +8979,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.862
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.789
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9078,7 +9018,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.870
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.796
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9117,7 +9057,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.878
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.805
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9156,7 +9096,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.886
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.812
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9195,7 +9135,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.895
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.820
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9234,7 +9174,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:14.902
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.827
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9273,7 +9213,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:15.877
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.835
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9312,7 +9252,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:15.885
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.843
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9351,7 +9291,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:15.893
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.852
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9390,7 +9330,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:15.901
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:47:34.860
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9429,7 +9369,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:15.910
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.643
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9468,7 +9408,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:15.927
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.652
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9507,7 +9447,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.248
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.668
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9546,7 +9486,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.365
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.676
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9585,7 +9525,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.373
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.684
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9624,7 +9564,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.381
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.692
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9663,7 +9603,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.389
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.700
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9702,7 +9642,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.397
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.708
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9741,7 +9681,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.976
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.723
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9780,7 +9720,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.992
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.731
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9819,7 +9759,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:17.999
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.803
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9858,7 +9798,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:18.007
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.811
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9897,7 +9837,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:18.022
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.819
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9936,7 +9876,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:18.029
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:08.827
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -9975,7 +9915,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:19.389
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.388
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10014,7 +9954,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:19.405
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.395
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10053,7 +9993,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:19.413
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.403
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10092,7 +10032,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:19.421
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.411
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10131,7 +10071,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:19.429
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.419
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10170,7 +10110,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:19.437
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.430
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10209,7 +10149,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:20.322
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.435
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10248,7 +10188,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:20.341
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.444
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10287,7 +10227,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:20.341
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.452
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10326,7 +10266,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:20.349
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.459
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10365,7 +10305,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:20.357
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.467
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10404,7 +10344,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:20.365
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.475
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10443,7 +10383,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:20.381
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.483
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10482,7 +10422,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:20.389
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.491
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10521,7 +10461,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:21.501
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.499
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10560,7 +10500,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:21.510
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.507
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10599,7 +10539,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:23.800
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.515
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10638,7 +10578,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:23.808
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.523
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10677,7 +10617,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:23.814
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:09.531
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10716,7 +10656,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:23.835
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.108
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10755,7 +10695,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:23.837
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.115
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10794,7 +10734,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:23.896
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.125
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10833,7 +10773,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:24.960
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.133
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10872,7 +10812,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:24.983
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.142
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10911,7 +10851,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:24.991
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.173
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10950,7 +10890,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:24.998
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.179
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -10989,7 +10929,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.007
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.187
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11028,7 +10968,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.023
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.195
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11067,7 +11007,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.031
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.203
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11106,7 +11046,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.040
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.212
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11145,7 +11085,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.047
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.947
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11184,7 +11124,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.068
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.955
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11223,7 +11163,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.069
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.963
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11262,7 +11202,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.069
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.971
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11301,7 +11241,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.085
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.979
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11340,7 +11280,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.093
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.987
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11379,7 +11319,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.119
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:10.996
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11418,7 +11358,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.127
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.371
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11457,7 +11397,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.135
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.379
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11496,7 +11436,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.143
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.387
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11535,7 +11475,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.151
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.395
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11574,7 +11514,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:25.159
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.403
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11613,7 +11553,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:26.507
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.411
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11652,7 +11592,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:26.517
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.419
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11691,7 +11631,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:26.525
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.427
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11730,7 +11670,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:26.533
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.435
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11769,7 +11709,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:26.541
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.443
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11808,7 +11748,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:26.551
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.451
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11847,7 +11787,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:26.559
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.459
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11886,7 +11826,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:27.446
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.477
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11925,7 +11865,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:27.454
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.483
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -11964,7 +11904,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:27.463
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.491
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12003,7 +11943,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:27.471
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.500
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12042,7 +11982,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 21:45:27.479
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.507
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12081,23 +12021,17 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:45:27.670
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 21:45:27.672
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.ui 4 0 2024-03-30 22:14:25.185
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.515
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.jdt.internal.ui.text.JavaWordFinder.findWord(JavaWordFinder.java:39)
-	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverRegion(AbstractJavaEditorTextHover.java:94)
-	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverRegion(JavaEditorTextHoverProxy.java:65)
-	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
-	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
-	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinks(JavaElementHyperlinkDetector.java:98)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
@@ -12125,42 +12059,18 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 22:24:02.566
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 22:24:02.567
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 22:25:47.282
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 22:25:47.283
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 22:27:08.771
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 22:27:08.772
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 22:27:19.079
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
-
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-30 22:27:19.081
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 
-!ENTRY org.eclipse.ui 4 0 2024-03-30 22:36:37.974
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.523
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.jdt.internal.ui.text.JavaWordFinder.findWord(JavaWordFinder.java:39)
-	at org.eclipse.jdt.internal.ui.text.java.hover.AbstractJavaEditorTextHover.getHoverRegion(AbstractJavaEditorTextHover.java:94)
-	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverRegion(JavaEditorTextHoverProxy.java:65)
-	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
-	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
-	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
-	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinks(JavaElementHyperlinkDetector.java:98)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
 	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
 	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
 	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
@@ -12189,13 +12099,85 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-31 01:38:58.783
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.581
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
+	at org.eclipse.jdt.internal.ui.text.JavaWordFinder.findWord(JavaWordFinder.java:39)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinks(JavaElementHyperlinkDetector.java:98)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-03-31 01:38:58.785
-!MESSAGE Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.589
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
+	at org.eclipse.jdt.internal.ui.text.JavaWordFinder.findWord(JavaWordFinder.java:39)
+	at org.eclipse.jdt.internal.ui.javaeditor.JavaElementHyperlinkDetector.detectHyperlinks(JavaElementHyperlinkDetector.java:98)
+	at org.eclipse.ui.texteditor.HyperlinkDetectorRegistry$HyperlinkDetectorDelegate.detectHyperlinks(HyperlinkDetectorRegistry.java:81)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:289)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.findHyperlinks(HyperlinkManager.java:262)
+	at org.eclipse.jface.text.hyperlink.HyperlinkManager.mouseMove(HyperlinkManager.java:457)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:216)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4209)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1043)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4026)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3626)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1157)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.416
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.597
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12234,7 +12216,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.417
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.605
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12273,7 +12255,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.423
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.612
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12312,7 +12294,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.431
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:18.621
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12351,7 +12333,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.439
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:24.022
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12390,7 +12372,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.447
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:24.027
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12429,7 +12411,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.455
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.635
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12468,7 +12450,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.463
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.643
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12507,7 +12489,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.471
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.652
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12546,7 +12528,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.479
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.659
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12585,7 +12567,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.488
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.667
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12624,7 +12606,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.497
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.675
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12663,7 +12645,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.504
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.708
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12702,7 +12684,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.512
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.715
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12741,7 +12723,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.520
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.724
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12780,7 +12762,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.529
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.732
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12819,7 +12801,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.537
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.740
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12858,7 +12840,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.625
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.748
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12897,7 +12879,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.632
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.755
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12936,7 +12918,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.641
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:25.763
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
@@ -12975,7 +12957,7 @@ java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1461)
 	at org.eclipse.equinox.launcher.Main.main(Main.java:1434)
 
-!ENTRY org.eclipse.ui 4 0 2024-03-31 01:49:42.648
+!ENTRY org.eclipse.ui 4 0 2024-05-10 03:49:27.638
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NoSuchMethodError: com.ibm.icu.text.UTF16.isSurrogate(C)Z

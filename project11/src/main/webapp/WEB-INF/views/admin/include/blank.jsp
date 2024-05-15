@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-버전을 입력해주세욘
+버전을 입력해주세요
 </body>
 </html>

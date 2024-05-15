@@ -53,12 +53,11 @@ public class TurnInfo {
 	public void setChampConditionE(ChampCondition champConditionE) {
 		this.champConditionE = champConditionE;
 	}
-	public List<SimulLogMessage> getTurnLog() {
-		return turnLog;
-	}
-	public void setTurnLog(List<SimulLogMessage> turnLog) {
-		this.turnLog = turnLog;
-	}
+
+	
+	 public List<SimulLogMessage> getTurnLog() { return turnLog; } public void
+	 setTurnLog(List<SimulLogMessage> turnLog) { this.turnLog = turnLog; }
+	 
 	public List<BattlePower> getBattlePowerU() {
 		return battlePowerU;
 	}

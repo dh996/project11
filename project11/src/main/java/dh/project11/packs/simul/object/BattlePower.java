@@ -139,22 +139,22 @@ public class BattlePower {
 		int kill = grow.getKill();
 		int death = grow.getDeath();
 		int assist = grow.getAssist();
-		int scale = (100+(level*10)+(kill*5)+(assist*2));
-		if(scale<=350) {
+		int scale = (30+(level*15)+(kill)+(assist/8));
+		if(scale<=450) {
 			this.hp *= (scale/10);
 			this.attackPower *= (scale/10);
 			this.battlePower *= (scale/10);
 			this.aggroGauge *= (scale/10);
 		}else {
-			this.hp *= 35;
-			this.attackPower *= 35;
-			this.battlePower *= 35;
-			this.aggroGauge *= 35;
+			this.hp *= 45;
+			this.attackPower *= 45;
+			this.battlePower *= 45;
+			this.aggroGauge *= 45;
 		}
 		
 		this.hp /= 10;
-		this.attackPower /= 20;
-		this.battlePower /= 20;
+		this.attackPower /= 15;
+		this.battlePower /= 30;
 		this.aggroGauge /= 10;
 	}
 	
@@ -251,33 +251,37 @@ public class BattlePower {
 
 	public void checkDragonStack(int dragonStack) {
 		// TODO Auto-generated method stub
-		this.hp *= 1+(dragonStack*0.05);
-		this.attackPower *= 1+(dragonStack*0.05);
-		this.battlePower *= 1+(dragonStack*0.05);
-		this.aggroGauge *= 1+(dragonStack*0.05);
+		this.hp *= 1+(dragonStack*0.03);
+		this.attackPower *= 1+(dragonStack*0.02);
+		this.battlePower *= 1+(dragonStack*0.02);
+		this.aggroGauge *= 1+(dragonStack*0.01);
 	}
 
 	public void checkBaronBuff(boolean baronBuff) {
 		// TODO Auto-generated method stub
-		this.hp *= 1.2;
-		this.attackPower *= 1.2;
-		this.initiatingPower *= 1.2;
-		this.battlePower *= 1.2;
-		this.aggroGauge *= 1.2;
+		if(baronBuff) {
+			this.hp *= 1.2;
+			this.attackPower *= 1.1;
+			this.initiatingPower *= 1.1;
+			this.battlePower *= 1.1;
+			this.aggroGauge *= 1.1;
+		}
 	}
 
 	public void checkElderBuff(boolean elderBuff) {
 		// TODO Auto-generated method stub
-		this.hp *= 1.1;
-		this.attackPower *= 1.4;
-		this.initiatingPower *= 1.1;
+		if(elderBuff) {
+			this.hp *= 1.1;
+			this.attackPower *= 1.3;
+			this.initiatingPower *= 1.1;
+		}
 	}
 
 	public void checkHp(int hpPer) {
 		// TODO Auto-generated method stub
 		if(hpPer<30) {
-			this.attackPower *= 0.7;
-			this.initiatingPower *= 0.7;
+			this.attackPower *= 0.9;
+			this.initiatingPower *= 0.8;
 			this.aggroGauge *= 1.4;
 		}
 	}
@@ -288,7 +292,7 @@ public class BattlePower {
 			if(this.position.equals("FureADC") ||
 					this.position.equals("ADC")) {
 				this.hp *= 1.1;
-				this.attackPower *= 1.4;
+				this.attackPower *= 1.1;
 			}
 		}
 	}

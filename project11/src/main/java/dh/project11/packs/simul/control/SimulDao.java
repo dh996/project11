@@ -33,7 +33,7 @@ public class SimulDao {
 	@Autowired
 	private Encryption encryption;
 
-	public void messageLogging(SimulLogMessage message, String sid, String fid, String tid, int visible) {
+	public void messageLogging(SimulLogMessage message, String sid, String fid, String tid, int visible, int turnCount, String attacker, String deffender) {
 		// TODO Auto-generated method stub
 		SimulLogVo simulLogVo = new SimulLogVo();
 		simulLogVo.setLogs_sid(sid);
@@ -46,6 +46,9 @@ public class SimulDao {
 		simulLogVo.setLogs_message(message.getMessage());
 		simulLogVo.setLogs_type(message.getType());
 		simulLogVo.setLogs_visible(visible);
+		simulLogVo.setLogs_turncount(turnCount);
+		simulLogVo.setLogs_attacker(attacker);
+		simulLogVo.setLogs_deffender(deffender);
 		sqlSession.insert("mapper.SimulMapper.insertSimulLog", simulLogVo);
 	}
 
@@ -53,7 +56,7 @@ public class SimulDao {
 		// TODO Auto-generated method stub
 		SimulListVo simulListVo = new SimulListVo();
 		simulListVo.setList_sid(sid);
-		simulListVo.setList_player("Dummy");
+		simulListVo.setList_player("errorData!@!@!@!@");
 		simulListVo.setList_winlose(1);
 		simulListVo.setList_version(version);
 		sqlSession.insert("mapper.SimulMapper.createSimulList", simulListVo);

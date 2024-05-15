@@ -21,11 +21,11 @@
     
         INSERT INTO simul_logs
         (
-            logs_sid, logs_fid, logs_tid, logs_message, logs_type, logs_visible
+            logs_sid, logs_fid, logs_tid, logs_message, logs_type, logs_visible, logs_turncount, logs_attacker, logs_deffender
         )
         VALUES
         (
-            #{logs_sid}, #{logs_fid}, #{logs_tid}, #{logs_message}, #{logs_type}, #{logs_visible}
+            #{logs_sid}, #{logs_fid}, #{logs_tid}, #{logs_message}, #{logs_type}, #{logs_visible}, #{logs_turncount}, #{logs_attacker}, #{logs_deffender}
         )
     </insert>
     

@@ -54,6 +54,14 @@ public class SimulTeamFight {
 		teamFightInfo.setSpawnBaronCount(0);
 		teamFightInfo.setSpawnDragonCount(0);
 		teamFightInfo.setSpawnElderCount(0);
+		List<String> dragonType = new ArrayList<>();
+		dragonType.add("화염");
+		dragonType.add("대지");
+		dragonType.add("바다");
+		dragonType.add("바람");
+		dragonType.add("마법공학");
+		dragonType.add("화학공학");
+		teamFightInfo.setDragonTypeList(dragonType);
 		return teamFightRoop(teamFightInfo, 1);
 	}
 	
@@ -76,7 +84,7 @@ public class SimulTeamFight {
 		towerCondition.getBot().setThirdTower(1000);
 		towerCondition.getBot().setInhibitor(1000);
 		towerCondition.setTwinTowerLeft(1000);
-		towerCondition.setTwinTowerLeft(1000);
+		towerCondition.setTwinTowerRight(1000);
 		towerCondition.setNexus(1000);
 		return towerCondition;
 	}
@@ -100,7 +108,6 @@ public class SimulTeamFight {
 		teamFightInfo.setTeamFightCount(count);
 		List<SimulLogMessage> teamFightLog = new ArrayList<>();
 		teamFightInfo.setTeamFightLog(teamFightLog);
-		teamFightInfo = spawnObjectLogic(teamFightInfo);
 		AboutFieldLogic battleFieldLogic = new AboutFieldLogic(teamFightInfo.getTowerU(), teamFightInfo.getTowerE());
 		String battleField = battleFieldLogic.battleFieldSetting(
 				teamFightInfo.isSpawnBaron(), teamFightInfo.isSpawnDragon(), teamFightInfo.isSpawnElder());
@@ -121,6 +128,7 @@ public class SimulTeamFight {
 			teamFightInfo2 = takeAdvantage(winner, teamFightInfo2, turnInfo, count, checkAlive);
 			teamFightInfo2 = failTeamObject(winner, teamFightInfo2);
 		}
+		teamFightInfo = spawnObjectLogic(teamFightInfo);
 		return teamFightInfo2;
 	}
 	
@@ -218,15 +226,15 @@ public class SimulTeamFight {
 		if(chanceToWin==false) {
 			if(spawnElder==true && battlePowerSum>260) {
 				teamFightInfo2.setSpawnElder(false);
-				teamFightLog.add(simulLogging.killElder(winner));
+				teamFightLog.add(simulLogging.killElder(winner, count));
 				teamFightInfo2 = getElderBuff(teamFightInfo2, turnInfo, winner);
 			}else if(spawnBaron==true && battlePowerSum>300) {
 				teamFightInfo2.setSpawnBaron(false);
-				teamFightLog.add(simulLogging.killBaron(winner));
+				teamFightLog.add(simulLogging.killBaron(winner, count));
 				teamFightInfo2 = getBaronBuff(teamFightInfo2, turnInfo, winner);
 			}else if(spawnDragon==true && battlePowerSum>120) {
 				teamFightInfo2.setSpawnDragon(false);
-				teamFightLog.add(simulLogging.killDragon(winner));
+				teamFightLog.add(simulLogging.killDragon(winner, teamFightInfo2.getDragonType(), count));
 				teamFightInfo2 = getDragonBuff(teamFightInfo2, winner);
 			}else {
 				teamFightInfo2 = attackOnBase(battlePowerSum, teamFightInfo2, winner, count);
@@ -263,10 +271,14 @@ public class SimulTeamFight {
 					towerHp.getTop().getInhibitor();
 			if(lineHp>damage) {
 				int afterHp = lineHp-damage;
-				towerHp = towerAttack("top", "top", afterHp, towerHp, winner);
+				towerHp = towerAttack("top", "top", afterHp, towerHp, winner, count);
+			}else if(lineHp>0){
+				towerHp = towerAttack("top", "top", 0, towerHp, winner, count);
+				int afterHp = damage-lineHp;
+				towerHp = towerAttack("top", "base", afterHp, towerHp, winner, count);
 			}else {
 				int afterHp = damage-lineHp;
-				towerHp = towerAttack("top", "base", afterHp, towerHp, winner);
+				towerHp = towerAttack("top", "base", afterHp, towerHp, winner, count);
 			}
 		}else if(battleField.equals("midLine") ||
 				battleField.equals("midFirstTowerU") ||
@@ -281,10 +293,14 @@ public class SimulTeamFight {
 					towerHp.getMid().getInhibitor();
 			if(lineHp>damage) {
 				int afterHp = lineHp-damage;
-				towerHp = towerAttack("mid", "mid", afterHp, towerHp, winner);
+				towerHp = towerAttack("mid", "mid", afterHp, towerHp, winner, count);
+			}else if(lineHp>0){
+				towerHp = towerAttack("mid", "mid", 0, towerHp, winner, count);
+				int afterHp = damage-lineHp;
+				towerHp = towerAttack("mid", "base", afterHp, towerHp, winner, count);
 			}else {
 				int afterHp = damage-lineHp;
-				towerHp = towerAttack("mid", "base", afterHp, towerHp, winner);
+				towerHp = towerAttack("mid", "base", afterHp, towerHp, winner, count);
 			}
 		}else if(battleField.equals("bottomLine") ||
 				battleField.equals("botFirstTowerU") ||
@@ -299,10 +315,14 @@ public class SimulTeamFight {
 					towerHp.getBot().getInhibitor();
 			if(lineHp>damage) {
 				int afterHp = lineHp-damage;
-				towerHp = towerAttack("bot", "bot", afterHp, towerHp, winner);
+				towerHp = towerAttack("bot", "bot", afterHp, towerHp, winner, count);
+			}else if(lineHp>0){
+				towerHp = towerAttack("bot", "bot", 0, towerHp, winner, count);
+				int afterHp = damage-lineHp;
+				towerHp = towerAttack("bot", "base", afterHp, towerHp, winner, count);
 			}else {
 				int afterHp = damage-lineHp;
-				towerHp = towerAttack("bot", "base", afterHp, towerHp, winner);
+				towerHp = towerAttack("bot", "base", afterHp, towerHp, winner, count);
 			}
 		}else {
 			int topHp = towerHp.getTop().getFristTower()+
@@ -322,55 +342,67 @@ public class SimulTeamFight {
 				int lineHp = topHp;
 				if(lineHp>damage) {
 					int afterHp = lineHp-damage;
-					towerHp = towerAttack("top", "top", afterHp, towerHp, winner);
+					towerHp = towerAttack("top", "top", afterHp, towerHp, winner, count);
 				}else {
 					int afterHp = damage-lineHp;
-					towerHp = towerAttack("top", "base", afterHp, towerHp, winner);
+					towerHp = towerAttack("top", "base", afterHp, towerHp, winner, count);
 				}
 			}else if(midHp==0) {
 				int lineHp = midHp;
 				if(lineHp>damage) {
 					int afterHp = lineHp-damage;
-					towerHp = towerAttack("mid", "mid", afterHp, towerHp, winner);
+					towerHp = towerAttack("mid", "mid", afterHp, towerHp, winner, count);
 				}else {
 					int afterHp = damage-lineHp;
-					towerHp = towerAttack("mid", "base", afterHp, towerHp, winner);
+					towerHp = towerAttack("mid", "base", afterHp, towerHp, winner, count);
 				}
 			}else if(botHp==0) {
 				int lineHp = botHp;
 				if(lineHp>damage) {
 					int afterHp = lineHp-damage;
-					towerHp = towerAttack("bot", "bot", afterHp, towerHp, winner);
+					towerHp = towerAttack("bot", "bot", afterHp, towerHp, winner, count);
 				}else {
 					int afterHp = damage-lineHp;
-					towerHp = towerAttack("bot", "base", afterHp, towerHp, winner);
+					towerHp = towerAttack("bot", "base", afterHp, towerHp, winner, count);
 				}
 			}else if(target<topHp) {
 				int lineHp = topHp;
 				if(lineHp>damage) {
 					int afterHp = lineHp-damage;
-					towerHp = towerAttack("top", "top", afterHp, towerHp, winner);
+					towerHp = towerAttack("top", "top", afterHp, towerHp, winner, count);
+				}else if(lineHp>0){
+					towerHp = towerAttack("top", "top", 0, towerHp, winner, count);
+					int afterHp = damage-lineHp;
+					towerHp = towerAttack("top", "base", afterHp, towerHp, winner, count);
 				}else {
 					int afterHp = damage-lineHp;
-					towerHp = towerAttack("top", "base", afterHp, towerHp, winner);
+					towerHp = towerAttack("top", "base", afterHp, towerHp, winner, count);
 				}
 			}else if(topHp<=target && target<midHp) {
 				int lineHp = midHp;
 				if(lineHp>damage) {
 					int afterHp = lineHp-damage;
-					towerHp = towerAttack("mid", "mid", afterHp, towerHp, winner);
+					towerHp = towerAttack("mid", "mid", afterHp, towerHp, winner, count);
+				}else if(lineHp>0){
+					towerHp = towerAttack("mid", "mid", 0, towerHp, winner, count);
+					int afterHp = damage-lineHp;
+					towerHp = towerAttack("mid", "base", afterHp, towerHp, winner, count);
 				}else {
 					int afterHp = damage-lineHp;
-					towerHp = towerAttack("mid", "base", afterHp, towerHp, winner);
+					towerHp = towerAttack("mid", "base", afterHp, towerHp, winner, count);
 				}
 			}else {
 				int lineHp = botHp;
 				if(lineHp>damage) {
 					int afterHp = lineHp-damage;
-					towerHp = towerAttack("bot", "bot", afterHp, towerHp, winner);
+					towerHp = towerAttack("bot", "bot", afterHp, towerHp, winner, count);
+				}else if(lineHp>0){
+					towerHp = towerAttack("bot", "bot", 0, towerHp, winner, count);
+					int afterHp = damage-lineHp;
+					towerHp = towerAttack("bot", "base", afterHp, towerHp, winner, count);
 				}else {
 					int afterHp = damage-lineHp;
-					towerHp = towerAttack("bot", "base", afterHp, towerHp, winner);
+					towerHp = towerAttack("bot", "base", afterHp, towerHp, winner, count);
 				}
 			}
 		}
@@ -388,174 +420,294 @@ public class SimulTeamFight {
 	}
 
 	private TowerCondition towerAttack(String from, String to, 
-			int afterHp, TowerCondition towerHp, boolean winner) {
+			int afterHp, TowerCondition towerHp, boolean winner, int count) {
 		// TODO Auto-generated method stub
 		if(to.equals("top")) {
 			if(towerHp.getTop().getFristTower()>0) {
 				if(afterHp<=3000) {
-					towerLog.add(simulLogging.destroyTower("TopFirstTower", winner));
-					towerHp.getTop().setFristTower(0);
+					towerLog.add(simulLogging.destroyTower("TopFirstTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(1000);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setTop(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("TopFirstTower", 4000-afterHp, winner));
-					towerHp.getTop().setFristTower(4000-afterHp);
+					towerLog.add(simulLogging.attackTower("TopFirstTower", 4000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(4000-afterHp);
+					line.setSecondTower(1000);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setTop(line);
 				}
 			}
 			if(towerHp.getTop().getFristTower()==0 && towerHp.getTop().getSecondTower()>0) {
 				if(afterHp<=2000) {
-					towerLog.add(simulLogging.destroyTower("TopSecondTower", winner));
-					towerHp.getTop().setSecondTower(0);
+					towerLog.add(simulLogging.destroyTower("TopSecondTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setTop(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("TopSecondTower", 3000-afterHp, winner));
-					towerHp.getTop().setSecondTower(3000-afterHp);
+					towerLog.add(simulLogging.attackTower("TopSecondTower", 3000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(3000-afterHp);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setTop(line);
 				}
 			}
 			if(towerHp.getTop().getSecondTower()==0 && towerHp.getTop().getThirdTower()>0) {
 				if(afterHp<=1000) {
-					towerLog.add(simulLogging.destroyTower("TopThirdTower", winner));
-					towerHp.getTop().setThirdTower(0);
+					towerLog.add(simulLogging.destroyTower("TopThirdTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(1000);
+					towerHp.setTop(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("TopThirdTower", 2000-afterHp, winner));
-					towerHp.getTop().setThirdTower(2000-afterHp);
+					towerLog.add(simulLogging.attackTower("TopThirdTower", 2000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(2000-afterHp);
+					line.setInhibitor(1000);
+					towerHp.setTop(line);
 				}
 			}
 			if(towerHp.getTop().getThirdTower()==0 && towerHp.getTop().getInhibitor()>0) {
 				if(afterHp<=0) {
-					towerLog.add(simulLogging.destroyTower("TopInhibitor", winner));
-					towerHp.getTop().setInhibitor(0);
+					towerLog.add(simulLogging.destroyTower("TopInhibitor", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(0);
+					towerHp.setTop(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("TopInhibitor", 1000-afterHp, winner));
-					towerHp.getTop().setInhibitor(1000-afterHp);
+					towerLog.add(simulLogging.attackTower("TopInhibitor", 1000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(1000-afterHp);
+					towerHp.setTop(line);
 				}
 			}
 		}else if(to.equals("mid")) {
 			if(towerHp.getMid().getFristTower()>0) {
 				if(afterHp<=3000) {
-					towerLog.add(simulLogging.destroyTower("MidFirstTower", winner));
-					towerHp.getMid().setFristTower(0);
+					towerLog.add(simulLogging.destroyTower("MidFirstTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(1000);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setMid(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("MidFirstTower", 4000-afterHp, winner));
-					towerHp.getMid().setFristTower(4000-afterHp);
+					towerLog.add(simulLogging.attackTower("MidFirstTower", 4000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(4000-afterHp);
+					line.setSecondTower(1000);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setMid(line);
 				}
 			}
 			if(towerHp.getMid().getFristTower()==0 && towerHp.getMid().getSecondTower()>0) {
 				if(afterHp<=2000) {
-					towerLog.add(simulLogging.destroyTower("MidSecondTower", winner));
-					towerHp.getMid().setSecondTower(0);
+					towerLog.add(simulLogging.destroyTower("MidSecondTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setMid(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("MidSecondTower", 3000-afterHp, winner));
-					towerHp.getMid().setSecondTower(3000-afterHp);
+					towerLog.add(simulLogging.attackTower("MidSecondTower", 3000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(3000-afterHp);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setMid(line);
 				}
 			}
 			if(towerHp.getMid().getSecondTower()==0 && towerHp.getMid().getThirdTower()>0) {
 				if(afterHp<=1000) {
-					towerLog.add(simulLogging.destroyTower("MidThirdTower", winner));
-					towerHp.getMid().setThirdTower(0);
+					towerLog.add(simulLogging.destroyTower("MidThirdTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(1000);
+					towerHp.setMid(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("MidThirdTower", 2000-afterHp, winner));
-					towerHp.getMid().setThirdTower(2000-afterHp);
+					towerLog.add(simulLogging.attackTower("MidThirdTower", 2000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(2000-afterHp);
+					line.setInhibitor(1000);
+					towerHp.setMid(line);
 				}
 			}
 			if(towerHp.getMid().getThirdTower()==0 && towerHp.getMid().getInhibitor()>0) {
 				if(afterHp<=0) {
-					towerLog.add(simulLogging.destroyTower("MidInhibitor", winner));
-					towerHp.getMid().setInhibitor(0);
+					towerLog.add(simulLogging.destroyTower("MidInhibitor", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(0);
+					towerHp.setMid(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("MidInhibitor", 1000-afterHp, winner));
-					towerHp.getMid().setInhibitor(1000-afterHp);
+					towerLog.add(simulLogging.attackTower("MidInhibitor", 1000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(1000-afterHp);
+					towerHp.setMid(line);
 				}
 			}
 		}else if(to.equals("bot")) {
 			if(towerHp.getBot().getFristTower()>0) {
 				if(afterHp<=3000) {
-					towerLog.add(simulLogging.destroyTower("BotFirstTower", winner));
-					towerHp.getBot().setFristTower(0);
+					towerLog.add(simulLogging.destroyTower("BotFirstTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(1000);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setBot(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("BotFirstTower", 4000-afterHp, winner));
-					towerHp.getBot().setFristTower(4000-afterHp);
+					towerLog.add(simulLogging.attackTower("BotFirstTower", 4000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(4000-afterHp);
+					line.setSecondTower(1000);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setBot(line);
 				}
 			}
 			if(towerHp.getBot().getFristTower()==0 && towerHp.getBot().getSecondTower()>0) {
 				if(afterHp<=2000) {
-					towerLog.add(simulLogging.destroyTower("BotSecondTower", winner));
-					towerHp.getBot().setSecondTower(0);
+					towerLog.add(simulLogging.destroyTower("BotSecondTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setBot(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("BotSecondTower", 3000-afterHp, winner));
-					towerHp.getBot().setSecondTower(3000-afterHp);
+					towerLog.add(simulLogging.attackTower("BotSecondTower", 3000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(3000-afterHp);
+					line.setThirdTower(1000);
+					line.setInhibitor(1000);
+					towerHp.setBot(line);
 				}
 			}
 			if(towerHp.getBot().getSecondTower()==0 && towerHp.getBot().getThirdTower()>0) {
 				if(afterHp<=1000) {
-					towerLog.add(simulLogging.destroyTower("BotThirdTower", winner));
-					towerHp.getBot().setThirdTower(0);
+					towerLog.add(simulLogging.destroyTower("BotThirdTower", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(1000);
+					towerHp.setBot(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("BotThirdTower", 2000-afterHp, winner));
-					towerHp.getBot().setThirdTower(2000-afterHp);
+					towerLog.add(simulLogging.attackTower("BotThirdTower", 2000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(2000-afterHp);
+					line.setInhibitor(1000);
+					towerHp.setBot(line);
 				}
 			}
 			if(towerHp.getBot().getThirdTower()==0 && towerHp.getBot().getInhibitor()>0) {
 				if(afterHp<=0) {
-					towerLog.add(simulLogging.destroyTower("BotInhibitor", winner));
-					towerHp.getBot().setInhibitor(0);
+					towerLog.add(simulLogging.destroyTower("BotInhibitor", winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(0);
+					towerHp.setBot(line);
 				}else {
-					towerLog.add(simulLogging.attackTower("BotInhibitor", 1000-afterHp, winner));
-					towerHp.getBot().setInhibitor(1000-afterHp);
+					towerLog.add(simulLogging.attackTower("BotInhibitor", 1000-afterHp, winner, count));
+					AttackRoute line = new AttackRoute();
+					line.setFristTower(0);
+					line.setSecondTower(0);
+					line.setThirdTower(0);
+					line.setInhibitor(1000-afterHp);
+					towerHp.setBot(line);
 				}
 			}
 		}else {
-			if(from.equals("top")) {
-				if(towerHp.getTop().getInhibitor()>0) {
-					towerLog.add(simulLogging.freePassLine("Top", winner));
-					towerHp.getTop().setFristTower(0);
-					towerHp.getTop().setSecondTower(0);
-					towerHp.getTop().setThirdTower(0);
-					towerHp.getTop().setInhibitor(0);
-				}
-			}else if(from.equals("mid")) {
-				if(towerHp.getMid().getInhibitor()>0) {
-					towerLog.add(simulLogging.freePassLine("Mid", winner));
-					towerHp.getMid().setFristTower(0);
-					towerHp.getMid().setSecondTower(0);
-					towerHp.getMid().setThirdTower(0);
-					towerHp.getMid().setInhibitor(0);
-				}
-			}else{
-				if(towerHp.getBot().getInhibitor()>0) {
-					towerLog.add(simulLogging.freePassLine("Bot", winner));
-					towerHp.getBot().setFristTower(0);
-					towerHp.getBot().setSecondTower(0);
-					towerHp.getBot().setThirdTower(0);
-					towerHp.getBot().setInhibitor(0);
-				}
-			}
+//			if(from.equals("top")) {
+//				if(towerHp.getTop().getInhibitor()>0) {
+//					towerLog.add(simulLogging.freePassLine("Top", winner));
+//					towerHp.getTop().setFristTower(0);
+//					towerHp.getTop().setSecondTower(0);
+//					towerHp.getTop().setThirdTower(0);
+//					towerHp.getTop().setInhibitor(0);
+//				}
+//			}else if(from.equals("mid")) {
+//				if(towerHp.getMid().getInhibitor()>0) {
+//					towerLog.add(simulLogging.freePassLine("Mid", winner));
+//					towerHp.getMid().setFristTower(0);
+//					towerHp.getMid().setSecondTower(0);
+//					towerHp.getMid().setThirdTower(0);
+//					towerHp.getMid().setInhibitor(0);
+//				}
+//			}else{
+//				if(towerHp.getBot().getInhibitor()>0) {
+//					towerLog.add(simulLogging.freePassLine("Bot", winner));
+//					towerHp.getBot().setFristTower(0);
+//					towerHp.getBot().setSecondTower(0);
+//					towerHp.getBot().setThirdTower(0);
+//					towerHp.getBot().setInhibitor(0);
+//				}
+//			}
 			int baseHp = towerHp.getNexus()+towerHp.getTwinTowerLeft()+towerHp.getTwinTowerRight();
 			int baseLateHp = baseHp-afterHp;
 			if(towerHp.getTwinTowerLeft()>0) {
 				if(baseLateHp<=2000) {
-					towerLog.add(simulLogging.destroyTower("TwinTowerLeft", winner));
+					towerLog.add(simulLogging.destroyTower("TwinTowerLeft", winner, count));
 					towerHp.setTwinTowerLeft(0);
 					baseLateHp -= 1000;
 				}else {
-					towerLog.add(simulLogging.attackTower("TwinTowerLeft", 3000-baseLateHp, winner));
+					towerLog.add(simulLogging.attackTower("TwinTowerLeft", 3000-baseLateHp, winner, count));
 					towerHp.setTwinTowerLeft(3000-baseLateHp);
 				}
 			}
 			if(towerHp.getTwinTowerLeft()==0 && towerHp.getTwinTowerRight()>0) {
 				if(baseLateHp<=1000) {
-					towerLog.add(simulLogging.destroyTower("TwinTowerRight", winner));
+					towerLog.add(simulLogging.destroyTower("TwinTowerRight", winner, count));
 					towerHp.setTwinTowerRight(0);
 					baseLateHp -= 1000;
 				}else {
-					towerLog.add(simulLogging.attackTower("TwinTowerRight", 2000-baseLateHp, winner));
+					towerLog.add(simulLogging.attackTower("TwinTowerRight", 2000-baseLateHp, winner, count));
 					towerHp.setTwinTowerRight(2000-baseLateHp);
 				}
 			}
 			if(towerHp.getTwinTowerRight()==0 && towerHp.getNexus()>0) {
 				if(baseLateHp<=0) {
-					towerLog.add(simulLogging.destroyTower("Nexus", winner));
+					towerLog.add(simulLogging.destroyTower("Nexus", winner, count));
 					towerHp.setNexus(0);
 					baseLateHp -= 1000;
 				}else {
-					towerLog.add(simulLogging.attackTower("Nexus", 1000-baseLateHp, winner));
+					towerLog.add(simulLogging.attackTower("Nexus", 1000-baseLateHp, winner, count));
 					towerHp.setNexus(1000-baseLateHp);
 				}
 			}
@@ -747,8 +899,8 @@ public class SimulTeamFight {
 		}
 		if(spawnBaronCount==7) {
 			spawnBaron = true;
-			spawnBaronCount = 4;
-			teamFightLog.add(simulLogging.spawnBaronLogging());
+			spawnBaronCount = 2;
+			teamFightLog.add(simulLogging.spawnBaronLogging(teamFightInfo.getTeamFightCount()));
 			teamFightInfo.setSpawnBaronCount(spawnBaronCount);
 			teamFightInfo.setSpawnBaron(spawnBaron);
 		}
@@ -756,14 +908,34 @@ public class SimulTeamFight {
 			spawnDragon = true;
 			spawnDragonCount = 0;
 			int dragonCount = userDragonStack+enemyDragonStack+1;
-			teamFightLog.add(simulLogging.spawnDragonLogging(dragonCount));
-			teamFightInfo.setSpawnDragonCount(spawnDragonCount);
-			teamFightInfo.setSpawnDragon(spawnDragon);
+			if(dragonCount<3) {
+				List<String>dragonList = teamFightInfo.getDragonTypeList();
+				int dragonIndex = random.nextInt(dragonList.size());
+				String elemental = dragonList.get(dragonIndex);
+				dragonList.remove(dragonIndex);
+				teamFightLog.add(simulLogging.spawnDragonLogging(dragonCount, elemental, teamFightInfo.getTeamFightCount()));
+				teamFightInfo.setDragonTypeList(dragonList);
+				teamFightInfo.setSpawnDragonCount(spawnDragonCount);
+				teamFightInfo.setSpawnDragon(spawnDragon);
+				teamFightInfo.setDragonType(elemental);
+			}else {
+				List<String>dragonList = teamFightInfo.getDragonTypeList();
+				int dragonIndex = random.nextInt(dragonList.size());
+				String elemental = dragonList.get(dragonIndex);
+				List<String> dragonElemantal = new ArrayList<>();
+				dragonElemantal.add(elemental);
+				teamFightLog.add(simulLogging.spawnDragonLogging(dragonCount, elemental, teamFightInfo.getTeamFightCount()));
+				teamFightInfo.setDragonTypeList(dragonElemantal);
+				teamFightInfo.setSpawnDragonCount(spawnDragonCount);
+				teamFightInfo.setSpawnDragon(spawnDragon);
+				teamFightInfo.setDragonType(elemental);
+			}
+			
 		}
 		if(spawnElderCount==3) {
 			spawnElder = true;
 			spawnElderCount = 0;
-			teamFightLog.add(simulLogging.spawnElderLogging());
+			teamFightLog.add(simulLogging.spawnElderLogging(teamFightInfo.getTeamFightCount()));
 			teamFightInfo.setSpawnElderCount(spawnElderCount);
 			teamFightInfo.setSpawnElder(spawnElder);
 		}
@@ -804,9 +976,9 @@ public class SimulTeamFight {
 		        userTeamInfo.setGrow1(growU);
 		        enemyTeamInfo.setGrow1(growE);
 		        teamFightLog.add(simulLogging.levelUpLogging(
-		        		growU.getLevel(), userTeamInfo.getChampName1(), true));
+		        		growU.getLevel(), userTeamInfo.getChampName1(), true, teamFightInfo.getTeamFightCount()));
 		        teamFightLog.add(simulLogging.levelUpLogging(
-		        		growE.getLevel(), enemyTeamInfo.getChampName1(), false));
+		        		growE.getLevel(), enemyTeamInfo.getChampName1(), false, teamFightInfo.getTeamFightCount()));
 		        break;
 		case 2: growU = userTeamInfo.getGrow2();
                 growE = enemyTeamInfo.getGrow2();
@@ -815,9 +987,9 @@ public class SimulTeamFight {
                 userTeamInfo.setGrow2(growU);
                 enemyTeamInfo.setGrow2(growE);
                 teamFightLog.add(simulLogging.levelUpLogging(
-                		growU.getLevel(), userTeamInfo.getChampName2(), true));
+                		growU.getLevel(), userTeamInfo.getChampName2(), true, teamFightInfo.getTeamFightCount()));
                 teamFightLog.add(simulLogging.levelUpLogging(
-                		growE.getLevel(), enemyTeamInfo.getChampName2(), false));
+                		growE.getLevel(), enemyTeamInfo.getChampName2(), false, teamFightInfo.getTeamFightCount()));
                 break;
 		case 3: growU = userTeamInfo.getGrow3();
                 growE = enemyTeamInfo.getGrow3();
@@ -826,9 +998,9 @@ public class SimulTeamFight {
                 userTeamInfo.setGrow3(growU);
                 enemyTeamInfo.setGrow3(growE);
                 teamFightLog.add(simulLogging.levelUpLogging(
-                		growU.getLevel(), userTeamInfo.getChampName3(), true));
+                		growU.getLevel(), userTeamInfo.getChampName3(), true, teamFightInfo.getTeamFightCount()));
                 teamFightLog.add(simulLogging.levelUpLogging(
-                		growE.getLevel(), enemyTeamInfo.getChampName3(), false));
+                		growE.getLevel(), enemyTeamInfo.getChampName3(), false, teamFightInfo.getTeamFightCount()));
                 break;
 		case 4: growU = userTeamInfo.getGrow4();
                 growE = enemyTeamInfo.getGrow4();
@@ -837,9 +1009,9 @@ public class SimulTeamFight {
                 userTeamInfo.setGrow4(growU);
                 enemyTeamInfo.setGrow4(growE);
                 teamFightLog.add(simulLogging.levelUpLogging(
-                		growU.getLevel(), userTeamInfo.getChampName4(), true));
+                		growU.getLevel(), userTeamInfo.getChampName4(), true, teamFightInfo.getTeamFightCount()));
                 teamFightLog.add(simulLogging.levelUpLogging(
-                		growE.getLevel(), enemyTeamInfo.getChampName4(), false));
+                		growE.getLevel(), enemyTeamInfo.getChampName4(), false, teamFightInfo.getTeamFightCount()));
                 break;
 		case 5: growU = userTeamInfo.getGrow5();
                 growE = enemyTeamInfo.getGrow5();
@@ -848,9 +1020,9 @@ public class SimulTeamFight {
                 userTeamInfo.setGrow5(growU);
                 enemyTeamInfo.setGrow5(growE);
                 teamFightLog.add(simulLogging.levelUpLogging(
-                		growU.getLevel(), userTeamInfo.getChampName5(), true));
+                		growU.getLevel(), userTeamInfo.getChampName5(), true, teamFightInfo.getTeamFightCount()));
                 teamFightLog.add(simulLogging.levelUpLogging(
-                		growE.getLevel(), enemyTeamInfo.getChampName5(), false));
+                		growE.getLevel(), enemyTeamInfo.getChampName5(), false, teamFightInfo.getTeamFightCount()));
                 break;
 		}
 
@@ -864,11 +1036,11 @@ public class SimulTeamFight {
 		int death = grow.getDeath();
 		int assist = grow.getAssist();
 		String build = grow.getBuild();
-		int getExp = random.nextInt(4000);
-		getExp += 10000;
-		getExp += (kill*100);
-		getExp -= (death*30);
-		getExp += (assist*50);
+		int getExp = random.nextInt(2000);
+		getExp += 6000;
+		getExp += (kill*50);
+		getExp -= (death*20);
+		getExp += (assist*10);
 		if(build.equals("Support") || build.equals("ADSupport")
 				|| build.equals("TankSupport") || build.equals("MageSupport")
 				|| build.equals("DealSupport") || build.equals("UtilSupport")) {

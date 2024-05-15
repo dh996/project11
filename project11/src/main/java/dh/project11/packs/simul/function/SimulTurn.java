@@ -89,7 +89,7 @@ public class SimulTurn {
 		fighting.resetValue();
 		fighting.FightingSetting(teamFightInfo.getBattleField(),
 				battleU, battleE, teamFightInfo.getTowerU(), teamFightInfo.getTowerE(),
-				turnInfo.getChampConditionU(),turnInfo.getChampConditionE(),turnInfo.getTurnLog());
+				turnInfo.getChampConditionU(),turnInfo.getChampConditionE(),turnInfo.getTurnLog(), teamFightInfo.getTeamFightCount());
 		fighting.setSid(sid);
 		fighting.setFid(fid);
 		fighting.setTid(tid);
@@ -286,7 +286,7 @@ public class SimulTurn {
 			}else if(name.equals(teaminfo.getChampName2())) {
 				for(int j=0; j<battle.size(); j++) {
 					String name2 = battle.get(j).getName();
-					if(name.equals(name2)) {
+					if(name.equals(name2) && battle.get(j).getHp()>0) {
 						int hpPer = (int)((battle2.get(i).getHp()/battle.get(j).getHp())*100);
 						champCondition.setHpPer2(hpPer);
 						if(hpPer>15) {
@@ -297,7 +297,7 @@ public class SimulTurn {
 			}else if(name.equals(teaminfo.getChampName3())) {
 				for(int j=0; j<battle.size(); j++) {
 					String name2 = battle.get(j).getName();
-					if(name.equals(name2)) {
+					if(name.equals(name2) && battle.get(j).getHp()>0) {
 						int hpPer = (int)((battle2.get(i).getHp()/battle.get(j).getHp())*100);
 						champCondition.setHpPer3(hpPer);
 						if(hpPer>15) {
@@ -308,7 +308,7 @@ public class SimulTurn {
 			}else if(name.equals(teaminfo.getChampName4())) {
 				for(int j=0; j<battle.size(); j++) {
 					String name2 = battle.get(j).getName();
-					if(name.equals(name2)) {
+					if(name.equals(name2) && battle.get(j).getHp()>0) {
 						int hpPer = (int)((battle2.get(i).getHp()/battle.get(j).getHp())*100);
 						champCondition.setHpPer4(hpPer);
 						if(hpPer>15) {
@@ -319,7 +319,7 @@ public class SimulTurn {
 			}else if(name.equals(teaminfo.getChampName5())) {
 				for(int j=0; j<battle.size(); j++) {
 					String name2 = battle.get(j).getName();
-					if(name.equals(name2)) {
+					if(name.equals(name2) && battle.get(j).getHp()>0) {
 						int hpPer = (int)((battle2.get(i).getHp()/battle.get(j).getHp())*100);
 						champCondition.setHpPer5(hpPer);
 						if(hpPer>15) {

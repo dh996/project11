@@ -146,9 +146,9 @@ public class TeamInfo {
 		this.champName5 = champName5;
 	}
 	public List<SimulLogMessage> getTeamLog() {
-		return teamLog;
+		return teamLog; 
 	}
 	public void setTeamLog(List<SimulLogMessage> teamLog) {
-		this.teamLog = teamLog;
+		this.teamLog = teamLog; 
 	}
 }

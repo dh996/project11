@@ -8,6 +8,9 @@ public class SimulLogVo {
 	private String logs_message;
 	private int logs_type;
 	private int logs_visible;
+	private int logs_turncount;
+	private String logs_attacker;
+	private String logs_deffender;
 	
 	public SimulLogVo(){
 		
@@ -47,5 +50,23 @@ public class SimulLogVo {
 	}
 	public void setLogs_visible(int logs_visible) {
 		this.logs_visible = logs_visible;
+	}
+	public int getLogs_turncount() {
+		return logs_turncount;
+	}
+	public void setLogs_turncount(int logs_turncount) {
+		this.logs_turncount = logs_turncount;
+	}
+	public String getLogs_attacker() {
+		return logs_attacker;
+	}
+	public void setLogs_attacker(String logs_attacker) {
+		this.logs_attacker = logs_attacker;
+	}
+	public String getLogs_deffender() {
+		return logs_deffender;
+	}
+	public void setLogs_deffender(String logs_deffender) {
+		this.logs_deffender = logs_deffender;
 	}
 }

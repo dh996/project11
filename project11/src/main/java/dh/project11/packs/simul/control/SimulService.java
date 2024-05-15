@@ -53,9 +53,9 @@ public class SimulService {
 		return simulDao.getSimulLogs(sid);
 	}
 	
-	public void messageLogging(SimulLogMessage message, String sid, String fid, String tid, int i) {
+	public void messageLogging(SimulLogMessage message, String sid, String fid, String tid, int visible, int turnCount, String attacker, String deffender) {
 		// TODO Auto-generated method stub
-		simulDao.messageLogging(message, sid, fid, tid, i);
+		simulDao.messageLogging(message, sid, fid, tid, visible, turnCount, attacker, deffender);
 	}
 
 	public String createTempID(String sid, String userID) {

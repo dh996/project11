@@ -12,63 +12,231 @@
 .flex{
     display:flex;
 }
+* {
+    cursor: default;
+}
+a {
+    color: inherit; /* 링크의 색을 부모 요소에서 상속 */
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    cursor: pointer;
+}
+#background{
+    width: 100%;
+    background-size: cover; /* 이미지가 요소에 맞게 확장되도록 설정합니다. */
+    background-position: center; /* 이미지를 가운데 정렬합니다. */
+    background-repeat: no-repeat; /* 이미지 반복을 비활성화합니다. */
+    transition: background-image 1s ease-in-out;
+}
+#background.background1 {
+    background-image: url('/packs/resources/img/main/back1.jpg');
+}
+#background.background2 {
+    background-image: url('/packs/resources/img/main/back2.jpg');
+}
+#background.background3 {
+    background-image: url('/packs/resources/img/main/back3.jpg');
+}
+#background.background4 {
+    background-image: url('/packs/resources/img/main/back4.jpg');
+}
+#background.background5 {
+    background-image: url('/packs/resources/img/main/back5.jpg');
+}
+#background.background6 {
+    background-image: url('/packs/resources/img/main/back6.jpg');
+}
+#ui{
+    max-width: 1000px;
+    margin-left: auto; /* 요소를 가운데 정렬하기 위해 왼쪽 마진을 자동으로 설정합니다. */
+    margin-right: auto;
+    padding: 0 50px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#tale{
+    height: 170px;
+}
 #simulMainBanner{
-    justify-content: space-around;
+    justify-content: flex-start;
+    height: 170px;
+}
+#menuBar{
+    padding:10px;
+    width: 145px;
+    font-size: 16px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+#menuBar > div{
+    margin-bottom: 8px;
+    justify-content: space-between;
+}
+#start{
+    width: 145px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background: #555;
+    transition: background-color 0.3s;
+}
+#start > a{
+    display: inline-block; /* 링크를 인라인 블록 요소로 변경하여 너비와 높이를 설정할 수 있도록 함 */
+    width: 100%; /* 부모 요소의 너비를 전체로 확장 */
+    height: 100%; /* 부모 요소의 높이를 전체로 확장 */
+    text-decoration: none; /* 링크 텍스트의 밑줄 제거 */
+    color: #fff;
+}
+#start:hover{
+    cursor: pointer;
+    background-color: #888;
+    color: #fff;
+}
+#start.on:hover{
+    background: #ff0000;
 }
 #pickChamps{
-    height: 200px;
+    height: 155px;
 }
 #champList {
+    height:600px;
+    overflow: auto;
+}
+#champListBox {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    padding: 3px;
 }
 
 .champ {
-    flex: 0 0 calc(10% - 20px); /* 10% 너비, 간격 20px */
-    margin: 3px; /* 플렉스 아이템 간격 조절 */
-    border: 1px solid #333;
+    margin: 7px; /* 플렉스 아이템 간격 조절 */
+    width: 150px; /* 가로 크기 고정 */
+    height: 150px; /* 세로 크기 고정 */
+    background: #555;
+    transition: background-color 0.3s; /* 변화를 0.3초 동안 부드럽게 만듦 */
+}
+.champ:hover{
+    background-color: #888; /* 호버 시 배경색 변화 */
+}
+.champ:hover, /* 부모 요소 호버 효과 */
+.champ:hover > * { /* 자식 요소 호버 효과 */
+    cursor: pointer;
+}
+
+/* champ 클래스 내부의 이미지 스타일 */
+.champ img {
+    max-width: 100%; /* 가로 크기 100%로 설정하여 부모 요소에 맞춤 */
+    height: auto; /* 세로 크기는 자동 조정 */
+}
+.tagName img {
+    height: 20px; /* 세로 크기는 자동 조정 */
+}
+
+/* champ 클래스 내부의 name 클래스의 스타일 */
+.champ .name {
+    padding: 2px; /* 패딩 설정 */
+    overflow: hidden; /* 글자가 div 밖으로 벗어날 경우 숨김 */
+    white-space: nowrap; /* 글자가 div 안에서 줄바꿈되지 않도록 설정 */
+    text-overflow: ellipsis; /* 글자가 div를 벗어날 경우 ...으로 표시 */
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
 }
 .cid {
     display: none;
 }
 .champ.on{
-    border: 1px solid #ff0000;
+    background: #ff0000;
 }
 .tagName {
     padding: 3px;
 }
+/* 스크롤바의 전체 스타일 */
+::-webkit-scrollbar {
+    width: 8px; /* 스크롤바의 너비 */
+}
+
+/* 스크롤바의 추적(트랙) 스타일 */
+::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.5); /* 추적(트랙)의 배경색 */
+}
+
+/* 스크롤바의 슬라이더(쓰롯) 스타일 */
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* 슬라이더(쓰롯)의 배경색 */
+    border-radius: 3px; /* 슬라이더(쓰롯)의 둥근 모서리 */
+}
+
+/* 마우스 오버시 스크롤바의 슬라이더(쓰롯) 스타일 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* 마우스 오버시 슬라이더(쓰롯)의 배경색 */
+}
 </style>
 </head>
 <body>
+<article id="background" class="background1">
+<div id="ui">
     <div id="simulMainBanner" class="flex">
-        <div>현재버전 ${version}</div>
-        <div>사용자 ${id}</div>
-        <div id="start" class="ready">시작하기</div>
-        <div><a href="/packs">메뉴로</a></div>
+        <div id="menuBar">
+            <div class="flex"><div>VERSION</div><div>${version}</div></div>
+            <div class="flex"><div>PLAYER</div><div>${id}</div></div>
+            <div>PICK 5 CHAMP</div>
+            <div id="start" class="ready">시작하기</div>
+            <div><a href="/packs">메뉴로</a></div>
+        </div>
+        <div id="pickChamps" class="flex">
+        </div>
     </div>
-    <div id="pickChamps" class="flex">
-    </div>
-    <div id="champList" class="flex">
+    <div id="champList">
+    <div id="champListBox" class="flex">
         <c:forEach var="champion" items="${champList}">
-        <div class="champ">
+        <div class="champ ${champion.champs_name.replaceAll(' ', '')}">
+            <img src="${pageContext.request.contextPath}/resources/img/${version}/splash/${champion.champs_name}.jpg">
             <div class="name">${champion.champs_name}</div>
             <div class="cid">${champion.champs_cid}</div>
             <div class="tags flex">
                 <c:forEach var="tags" items="${champion.champs_tags}">
-                <div class="tagName">${tags}</div>
+                <div class="tagName">
+                    <img src="${pageContext.request.contextPath}/resources/img/main/${tags}.webp">
+                </div>
                 </c:forEach>
             </div>
         </div>
         </c:forEach>
     </div>
+    </div>
+    <div id="tale">
+    </div>
+</div>
+</article>
     
     <script>
         var jQ = jQuery.noConflict();
+        
+        var nowImg = 1;
+        function changeBack(){
+        	var backImg = Math.floor(Math.random() * 6) + 1;
+        	if(backImg != nowImg){
+            	setBack(backImg);
+        	}else{
+        		console.log("배경이미지 중복탐지");
+        		changeBack();
+        	}
+        }
+        
+        function setBack(backImg){
+        	nowImg = backImg;
+        	jQ("#background").removeClass();
+        	jQ("#background").addClass("background" + backImg);
+        }
+        setInterval(changeBack, 5000);
+        
         var id = '${id}'
         console.log(id)
         
         var selectCount = 0;
-        jQ('.champ').click(function(){
+        
+        jQ('#champListBox > .champ').click(function(){
         	if(jQ(this).hasClass('on')){
         		jQ(this).removeClass('on');
         		selectCount --;
@@ -91,10 +259,29 @@
             // 각 선택된 .champ 요소를 복제하여 새로운 .champ를 생성하고, #pickChamps의 자식으로 추가
             selectedChamps.each(function () {
                 var clonedChamp = jQ(this).clone();
+                var keyWord = jQ(this).find('.name').text().replaceAll(' ', '');
+                console.log(keyWord);
                 clonedChamp.removeClass('on'); // 'on' 클래스 제거
+                clonedChamp.on('click', function () {
+                    removeChampList(keyWord);
+                    jQ(this).remove(); // 클릭된 div를 제거
+                });
                 jQ('#pickChamps').append(clonedChamp);
             });
         }
+        
+        function removeChampList(keyWord){
+        	console.log(keyWord);
+        	var target = document.querySelectorAll('#champListBox .champ.' + keyWord + '.on');
+            if(target.length > 0){ // 선택된 요소가 있는지 확인
+                target.forEach(function(element) {
+                	console.log("removeChampList");
+                    element.classList.remove('on');
+                });
+                selectCount--;
+            }
+        }
+        
         
         function startAjax() {
             var selectedChampData = [];
@@ -136,6 +323,7 @@
         function createResultBanner(tempId){
         	var resultLink = '<a href="/packs/simul/simulResult/'+tempId+'/'+id+'">결과확인</a>'
         	jQ('#start').empty()
+        	jQ('#start').addClass('on');
         	jQ('#start').append(resultLink)
         }
         

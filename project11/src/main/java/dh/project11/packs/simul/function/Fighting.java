@@ -24,6 +24,7 @@ public class Fighting {
 	@Autowired
 	SimulLogging simulLogging;
 	
+	private int turnCount;
 	private String sid;
 	private String fid;
 	private String tid;
@@ -54,7 +55,8 @@ public class Fighting {
 	public void FightingSetting(String battleField, List<BattlePower> battleU, List<BattlePower> battleE,
 			TowerCondition towerU, TowerCondition towerE,
 			ChampCondition champConditionU, ChampCondition champConditionE,
-			List<SimulLogMessage> fightLog) {
+			List<SimulLogMessage> fightLog, int turnCount) {
+		this.turnCount = turnCount;
 		this.battleField = battleField;
 		this.battleU = battleU;
 		System.out.println("파이팅 인수체크 배틀필드"+battleField);
@@ -357,11 +359,11 @@ public class Fighting {
 				hp -= 300;
 				if(hp>0) {
 					this.battle2.get(target1_1).setHp(hp);
-					fightLog.add(simulLogging.towerAttack(battle2.get(target1_1).getName(), true));
+					fightLog.add(simulLogging.towerAttack(battle2.get(target1_1).getName(), true, turnCount));
 				}else {
 					this.battle2.get(target1_1).setHp(0);
-					fightLog.add(simulLogging.towerAttack(battle2.get(target1_1).getName(), true));
-					fightLog.add(simulLogging.champDead(battle2.get(target1_1).getName(), battleField, true));
+					fightLog.add(simulLogging.towerAttack(battle2.get(target1_1).getName(), true, turnCount));
+					fightLog.add(simulLogging.champDead(battle2.get(target1_1).getName(), battleField, true, turnCount));
 					this.battle2.remove(target1_1);
 					setTarget();
 				}
@@ -370,11 +372,11 @@ public class Fighting {
 				hp -= 300;
 				if(hp>0) {
 					this.battle1.get(target2_2).setHp(hp);
-					fightLog.add(simulLogging.towerAttack(battle1.get(target2_2).getName(), true));
+					fightLog.add(simulLogging.towerAttack(battle1.get(target2_2).getName(), true, turnCount));
 				}else {
 					this.battle1.get(target2_2).setHp(0);
-					fightLog.add(simulLogging.towerAttack(battle1.get(target2_2).getName(), true));
-					fightLog.add(simulLogging.champDead(battle1.get(target2_2).getName(), battleField, true));
+					fightLog.add(simulLogging.towerAttack(battle1.get(target2_2).getName(), true, turnCount));
+					fightLog.add(simulLogging.champDead(battle1.get(target2_2).getName(), battleField, true, turnCount));
 					this.battle1.remove(target2_2);
 					setTarget();
 				}
@@ -385,11 +387,11 @@ public class Fighting {
 				hp -= 300;
 				if(hp>0) {
 					this.battle2.get(target1_1).setHp(hp);
-					fightLog.add(simulLogging.towerAttack(battle2.get(target1_1).getName(), false));
+					fightLog.add(simulLogging.towerAttack(battle2.get(target1_1).getName(), false, turnCount));
 				}else {
 					this.battle2.get(target1_1).setHp(0);
-					fightLog.add(simulLogging.towerAttack(battle2.get(target1_1).getName(), false));
-					fightLog.add(simulLogging.champDead(battle2.get(target1_1).getName(), battleField, false));
+					fightLog.add(simulLogging.towerAttack(battle2.get(target1_1).getName(), false, turnCount));
+					fightLog.add(simulLogging.champDead(battle2.get(target1_1).getName(), battleField, false, turnCount));
 					this.battle2.remove(target1_1);
 					setTarget();
 				}
@@ -398,11 +400,11 @@ public class Fighting {
 				hp -= 300;
 				if(hp>0) {
 					this.battle1.get(target2_2).setHp(hp);
-					fightLog.add(simulLogging.towerAttack(battle1.get(target2_2).getName(), false));
+					fightLog.add(simulLogging.towerAttack(battle1.get(target2_2).getName(), false, turnCount));
 				}else {
 					this.battle1.get(target2_2).setHp(0);
-					fightLog.add(simulLogging.towerAttack(battle1.get(target2_2).getName(), false));
-					fightLog.add(simulLogging.champDead(battle1.get(target2_2).getName(), battleField, false));
+					fightLog.add(simulLogging.towerAttack(battle1.get(target2_2).getName(), false, turnCount));
+					fightLog.add(simulLogging.champDead(battle1.get(target2_2).getName(), battleField, false, turnCount));
 					this.battle1.remove(target2_2);
 					setTarget();
 				}
@@ -423,11 +425,11 @@ public class Fighting {
 		    		this.battle1.get(targetIndex).setHp(hp);
 		    	}
 		    	fightLog.add(simulLogging.champAttack(
-		    			battleL.get(targetIndex).getName(), battleF.get(i).getName(), damage, type));
+		    			battleL.get(targetIndex).getName(), battleF.get(i).getName(), damage, type, turnCount));
 		    }else {
 		    	fightLog.add(simulLogging.champAttack(
-		    			battleL.get(targetIndex).getName(), battleF.get(i).getName(), damage, type));
-		    	fightLog.add(simulLogging.champDead(battleL.get(targetIndex).getName(), battleF.get(i).getName(), type));
+		    			battleL.get(targetIndex).getName(), battleF.get(i).getName(), damage, type, turnCount));
+		    	fightLog.add(simulLogging.champDead(battleL.get(targetIndex).getName(), battleF.get(i).getName(), type, turnCount));
 		    	if(attackTeam==1) {
 		    		int kills = battleF.get(i).getKill()+1;
 		    		battle1.get(i).setKill(kills);
@@ -480,7 +482,7 @@ public class Fighting {
 			boolean type, int attackTeam) {
 		// TODO Auto-generated method stub
 		int hp = battleL.get(target1_2).getHp();
-		float dmgRate = (float) (3+((random.nextInt(5))*0.1));
+		float dmgRate = (float) (2.2+((random.nextInt(5))*0.1));
 		for(int i=0; i<battleF.size(); i++) {
 			if(battleF.get(i).isActive()==true)
 			if(battleF.get(i).getPosition().equals("FureMage") || 
@@ -498,7 +500,7 @@ public class Fighting {
 			boolean type, int attackTeam) {
 		// TODO Auto-generated method stub
 		int hp = battleL.get(target1_1).getHp();
-		float dmgRate = (float) (2+((random.nextInt(5))*0.1));
+		float dmgRate = (float) (1.3+((random.nextInt(5))*0.1));
 		for(int i=0; i<battleF.size(); i++) {
 			if(battleF.get(i).isActive()==true)
 			if(battleF.get(i).getPosition().equals("Fighter") ||
@@ -550,7 +552,7 @@ public class Fighting {
 		// TODO Auto-generated method stub
 		String name = battleF.get(initiator).getName();
 		System.out.println("어택이닛 인수확인"+name+type);
-		this.fightLog.add(simulLogging.initLogging(name, type));
+		this.fightLog.add(simulLogging.initLogging(name, type, turnCount));
 		int hp = battleL.get(target1_1).getHp();
 		float dmgRate = (float) (1+((random.nextInt(9))*0.1));
 		int damage = (int) ((battleF.get(initiator).getAttackPower())*dmgRate);

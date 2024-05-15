@@ -42,10 +42,9 @@ public class SimulInfo {
 	public void setWin(boolean win) {
 		this.win = win;
 	}
-	public SimulLogMessage getSimulResult() {
-		return simulResult;
-	}
-	public void setSimulResult(SimulLogMessage simulResult) {
-		this.simulResult = simulResult;
-	}
+	
+	 public SimulLogMessage getSimulResult() { return simulResult; } public void
+	 setSimulResult(SimulLogMessage simulResult) { this.simulResult = simulResult;
+	 }
+
 }

@@ -22,6 +22,8 @@ public class TeamFightInfo {
 	private int spawnBaronCount;
 	private int spawnDragonCount;
 	private int spawnElderCount;
+	private List<String> dragonTypeList;
+	private String dragonType;
 	
 	public String getSid() {
 		return sid;
@@ -71,12 +73,10 @@ public class TeamFightInfo {
 	public void setTowerE(TowerCondition towerE) {
 		this.towerE = towerE;
 	}
-	public List<SimulLogMessage> getTeamFightLog() {
-		return teamFightLog;
-	}
+	public List<SimulLogMessage> getTeamFightLog() { return teamFightLog; }
 	public void setTeamFightLog(List<SimulLogMessage> teamFightLog) {
-		this.teamFightLog = teamFightLog;
-	}
+	this.teamFightLog = teamFightLog; }
+
 	public boolean isSpawnBaron() {
 		return spawnBaron;
 	}
@@ -112,5 +112,17 @@ public class TeamFightInfo {
 	}
 	public void setSpawnElderCount(int spawnElderCount) {
 		this.spawnElderCount = spawnElderCount;
+	}
+	public List<String> getDragonTypeList() {
+		return dragonTypeList;
+	}
+	public void setDragonTypeList(List<String> dragonTypeList) {
+		this.dragonTypeList = dragonTypeList;
+	}
+	public String getDragonType() {
+		return dragonType;
+	}
+	public void setDragonType(String dragonType) {
+		this.dragonType = dragonType;
 	}
 }

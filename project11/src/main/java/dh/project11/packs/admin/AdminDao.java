@@ -104,30 +104,30 @@ public class AdminDao {
 	    //    sqlSessionUpdate.insert("mapper.UpdateMapper.uploadSkins", updateSkinsVo);
 	    //}
 	    
-	    UpdateStatsVo updateStatsVo = new UpdateStatsVo();
-	    updateStatsVo.setStats_version(version);
-	    updateStatsVo.setStats_cid(version+"_"+key);
-		updateStatsVo.setStats_hp(stats.get("hp"));
-		updateStatsVo.setStats_hpperlevel(stats.get("hpperlevel"));
-		updateStatsVo.setStats_mp(stats.get("mp"));
-		updateStatsVo.setStats_mpperlevel(stats.get("mpperlevel"));
-		updateStatsVo.setStats_movespeed(stats.get("movespeed"));
-		updateStatsVo.setStats_armor(stats.get("armor"));
-		updateStatsVo.setStats_armorperlevel(stats.get("armorperlevel"));
-		updateStatsVo.setStats_spellblock(stats.get("spellblock"));
-		updateStatsVo.setStats_spellblockperlevel(stats.get("spellblockperlevel"));
-		updateStatsVo.setStats_attackrange(stats.get("attackrange"));
-		updateStatsVo.setStats_hpregen(stats.get("hpregen"));
-		updateStatsVo.setStats_hpregenperlevel(stats.get("hpregenperlevel"));
-		updateStatsVo.setStats_mpregen(stats.get("mpregen"));
-		updateStatsVo.setStats_mpregenperlevel(stats.get("mpregenperlevel"));
-		updateStatsVo.setStats_crit(stats.get("crit"));
-		updateStatsVo.setStats_critperlevel(stats.get("critperlevel"));
-		updateStatsVo.setStats_attackdamage(stats.get("attackdamage"));
-		updateStatsVo.setStats_attackdamageperlevel(stats.get("attackdamageperlevel"));
-		updateStatsVo.setStats_attackspeedperlevel(stats.get("attackspeedperlevel"));
-		updateStatsVo.setStats_attackspeed(stats.get("attackspeed"));
-	    sqlSessionUpdate.insert("mapper.UpdateMapper.uploadStats", updateStatsVo);
+//	    UpdateStatsVo updateStatsVo = new UpdateStatsVo();
+//	    updateStatsVo.setStats_version(version);
+//	    updateStatsVo.setStats_cid(version+"_"+key);
+//		updateStatsVo.setStats_hp(stats.get("hp"));
+//		updateStatsVo.setStats_hpperlevel(stats.get("hpperlevel"));
+//		updateStatsVo.setStats_mp(stats.get("mp"));
+//		updateStatsVo.setStats_mpperlevel(stats.get("mpperlevel"));
+//		updateStatsVo.setStats_movespeed(stats.get("movespeed"));
+//		updateStatsVo.setStats_armor(stats.get("armor"));
+//		updateStatsVo.setStats_armorperlevel(stats.get("armorperlevel"));
+//		updateStatsVo.setStats_spellblock(stats.get("spellblock"));
+//		updateStatsVo.setStats_spellblockperlevel(stats.get("spellblockperlevel"));
+//		updateStatsVo.setStats_attackrange(stats.get("attackrange"));
+//		updateStatsVo.setStats_hpregen(stats.get("hpregen"));
+//		updateStatsVo.setStats_hpregenperlevel(stats.get("hpregenperlevel"));
+//		updateStatsVo.setStats_mpregen(stats.get("mpregen"));
+//		updateStatsVo.setStats_mpregenperlevel(stats.get("mpregenperlevel"));
+//		updateStatsVo.setStats_crit(stats.get("crit"));
+//		updateStatsVo.setStats_critperlevel(stats.get("critperlevel"));
+//		updateStatsVo.setStats_attackdamage(stats.get("attackdamage"));
+//		updateStatsVo.setStats_attackdamageperlevel(stats.get("attackdamageperlevel"));
+//		updateStatsVo.setStats_attackspeedperlevel(stats.get("attackspeedperlevel"));
+//		updateStatsVo.setStats_attackspeed(stats.get("attackspeed"));
+//	    sqlSessionUpdate.insert("mapper.UpdateMapper.uploadStats", updateStatsVo);
 	}
 
 	public List<UpdateChampsVo> getChampList(String version) {
