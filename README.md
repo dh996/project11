@@ -28,7 +28,7 @@ web 환경에서는 클라이언트가 서버에서 데이터를 호출할 때 �
 
 
 
--2 도식화
+-2 세부사항
 
 -1) DB구조
 
@@ -61,24 +61,27 @@ temp_ip = 가상의 키값을 발급받은 유저의 정보, 클라이언트에�
 
 이러한 목적 하에 작성자의 평소 취미인 게임을 소재로 삼는 것이 적합하다고 생각하여 게임 시뮬레이션 프로그램을 제작하였다.
 
-프로그램을 굴리는 기본 정보들을 받아오는 부분과 실제 프로그램으로 분할하여 소개하겠다.
+프로그램을 굴리는 기본 정보들을 받아오는 부분과 실제 프로그램, 클라이언트로 분할하여 소개하겠다.
 
 프로그래밍 방식을 배우고 제작한 프로그램이 아니라 다소 비효율적인 코드가 많이 존재할 것으로 여겨진다.
 
+최적화보다는 기능구현에 의의를 두고 진행하였다.
 
--2 도식화
+-2 세부사항
 
 -1) 프로그램 구동 데이터를 다루는 부분
 
 -1)) DB구조
 
 ![updateLogs](https://github.com/dh996/project11/assets/139844465/d81bfdf1-d094-40ba-96c5-44ed04c85378)
+
 01. update_logs
 어떤 버전이 프로그램에 저장되어있는지에 대한 테이블
 logs_version = 데이터의 버전 정보
 logs_datetime = 버전 정보가 업데이트된 날짜
 
 ![updateChamps](https://github.com/dh996/project11/assets/139844465/c6107b95-c212-4645-b126-31903ecfbc88)
+
 02. update_champs
 프로그램에서 사용되는 챔피언들의 데이터 테이블
 champs_version = 데이터의 버전 정보 - logs 테이블의 version과 외래 키로 연결
@@ -87,10 +90,53 @@ champs_name = 데이터의 한글 이름
 champs_id = 데이터의 영어 이름
 
 ![updateTags](https://github.com/dh996/project11/assets/139844465/99a66843-d58f-4803-8ec7-16b190bc3958)
+
 03. update_tags
 각 챔피언들이 가지고 있는 역할군들에 대한 데이터 테이블
 tags_cid = 이 태그를 가지고 있는 챔피언의 cid정보 - champs테이블의 cid와 외래 키로 연결
 tags_version = 데이터의 버전 정보 - logs테이블의 version과 외래 키로 연결
 champs_tags = 역할군 정보
 
--2)) 알고리
+-2)) 알고리즘
+
+![updateFN](https://github.com/dh996/project11/assets/139844465/a5173572-40d9-4590-9b7c-683c41ccc5f0)
+
+
+
+-2) 실제 프로그램
+
+-1)) DB구조
+
+![simulList](https://github.com/dh996/project11/assets/139844465/b3b7fd83-c077-4697-8227-a559a0fd7a10)
+
+01. simul_list
+프로그램을 통해 실행된 시뮬레이션의 목록
+list_sid = 시뮬레이션의 고유 id
+list_player = 시뮬레이션을 진행한 유저
+list_date = 시뮬레이션을 진행한 날짜
+list_winlose = 시뮬레이션의 결과
+list_version = 시뮬레이션을 진행한 프로그램의 버전
+
+![simulData](https://github.com/dh996/project11/assets/139844465/902cdb8a-b56c-4321-a166-a2262d62fb0e)
+
+02. simul_data
+시뮬레이션 결과의 상세 데이터
+list 테이블과 같이 사용했어도 별 문제는 없었을텐데 초반 구상단계에서 살이 하나 둘 붙다보니 추가로 생긴 테이블
+data_sid = 시뮬레이션 고유 id - list_sid를 외래 키로
+이후의 컬럼은 전부 결과값이 기록된 컬럼임
+
+![simulLogs](https://github.com/dh996/project11/assets/139844465/0a541adc-c55e-4e70-8045-f8b4d5496bb1)
+
+03. simul_logs
+시뮬레이션 진행 과정을 기록한 테이블
+logs_sid = 시뮬레이션 고유 id - list_sid를 외래 키로
+logs_fid, logs_tid = 시뮬레이션의 어떤 구간에서 일어난 기록인지를 알기 위해 썼었는데 다른 방법을 채택함으로 인해 사용처가 없어짐
+logs_message = 시뮬레이션 과정을 기록한 메세지
+logs_type = 클라이언트에서 메세지의 스타일을 주기 위한 컬럼
+logs_visible = 클라이언트에서 표시하지 않아도 될 정보를 구분하기 위한 컬럼
+logs_turncount = 어떤 구간의 메세지인지 구분하기 위한 컬럼
+logs_attacker = 클라이언트에서 효과를 구현하기 위한 컬럼1
+logs_deffender = 클라이언트에서 효과를 구현하기 위한 컬럼2
+
+-2))알고리즘
+
