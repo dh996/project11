@@ -43,7 +43,7 @@ temp_ip = 가상의 키값을 발급받은 유저의 정보, 클라이언트에�
 
 -2) 알고리즘
 
-![tempFN](https://github.com/dh996/project11/assets/139844465/b76c56f8-1c08-427d-bb7e-7f781681e424)
+![tempFN](https://github.com/dh996/project11/assets/139844465/2af7c155-410c-4498-84c1-16caf5aeaf22)
 
 
 -3) 기대 효과
@@ -61,9 +61,36 @@ temp_ip = 가상의 키값을 발급받은 유저의 정보, 클라이언트에�
 
 이러한 목적 하에 작성자의 평소 취미인 게임을 소재로 삼는 것이 적합하다고 생각하여 게임 시뮬레이션 프로그램을 제작하였다.
 
+프로그램을 굴리는 기본 정보들을 받아오는 부분과 실제 프로그램으로 분할하여 소개하겠다.
+
 프로그래밍 방식을 배우고 제작한 프로그램이 아니라 다소 비효율적인 코드가 많이 존재할 것으로 여겨진다.
 
 
 -2 도식화
 
--1)
+-1) 프로그램 구동 데이터를 다루는 부분
+
+-1)) DB구조
+
+![updateLogs](https://github.com/dh996/project11/assets/139844465/d81bfdf1-d094-40ba-96c5-44ed04c85378)
+01. update_logs
+어떤 버전이 프로그램에 저장되어있는지에 대한 테이블
+logs_version = 데이터의 버전 정보
+logs_datetime = 버전 정보가 업데이트된 날짜
+
+![updateChamps](https://github.com/dh996/project11/assets/139844465/c6107b95-c212-4645-b126-31903ecfbc88)
+02. update_champs
+프로그램에서 사용되는 챔피언들의 데이터 테이블
+champs_version = 데이터의 버전 정보 - logs 테이블의 version과 외래 키로 연결
+champs_cid = 데이터의 고유 키값
+champs_name = 데이터의 한글 이름
+champs_id = 데이터의 영어 이름
+
+![updateTags](https://github.com/dh996/project11/assets/139844465/99a66843-d58f-4803-8ec7-16b190bc3958)
+03. update_tags
+각 챔피언들이 가지고 있는 역할군들에 대한 데이터 테이블
+tags_cid = 이 태그를 가지고 있는 챔피언의 cid정보 - champs테이블의 cid와 외래 키로 연결
+tags_version = 데이터의 버전 정보 - logs테이블의 version과 외래 키로 연결
+champs_tags = 역할군 정보
+
+-2)) 알고리
