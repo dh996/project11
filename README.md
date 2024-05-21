@@ -75,7 +75,7 @@ temp_ip = 가상의 키값을 발급받은 유저의 정보, 클라이언트에�
 
 ![updateLogs](https://github.com/dh996/project11/assets/139844465/d81bfdf1-d094-40ba-96c5-44ed04c85378)
 
-01. update_logs
+01/ update_logs
    
 어떤 버전이 프로그램에 저장되어있는지에 대한 테이블
 
@@ -85,7 +85,7 @@ logs_datetime = 버전 정보가 업데이트된 날짜
 
 ![updateChamps](https://github.com/dh996/project11/assets/139844465/c6107b95-c212-4645-b126-31903ecfbc88)
 
-02. update_champs
+02/ update_champs
    
 프로그램에서 사용되는 챔피언들의 데이터 테이블
 
@@ -99,7 +99,7 @@ champs_id = 데이터의 영어 이름
 
 ![updateTags](https://github.com/dh996/project11/assets/139844465/99a66843-d58f-4803-8ec7-16b190bc3958)
 
-03. update_tags
+03/ update_tags
    
 각 챔피언들이 가지고 있는 역할군들에 대한 데이터 테이블
 
@@ -121,7 +121,7 @@ champs_tags = 역할군 정보
 
 ![simulList](https://github.com/dh996/project11/assets/139844465/b3b7fd83-c077-4697-8227-a559a0fd7a10)
 
-01. simul_list
+01/ simul_list
    
 프로그램을 통해 실행된 시뮬레이션의 목록
 
@@ -138,7 +138,7 @@ list_version = 시뮬레이션을 진행한 프로그램의 버전
 
 ![simulData](https://github.com/dh996/project11/assets/139844465/902cdb8a-b56c-4321-a166-a2262d62fb0e)
 
-02. simul_data
+02/ simul_data
    
 시뮬레이션 결과의 상세 데이터
 
@@ -150,7 +150,7 @@ data_sid = 시뮬레이션 고유 id - list_sid를 외래 키로
 
 ![simulLogs](https://github.com/dh996/project11/assets/139844465/0a541adc-c55e-4e70-8045-f8b4d5496bb1)
 
-03. simul_logs
+03/ simul_logs
 
 시뮬레이션 진행 과정을 기록한 테이블
 
@@ -170,39 +170,44 @@ logs_attacker = 클라이언트에서 효과를 구현하기 위한 컬럼1
 
 logs_deffender = 클라이언트에서 효과를 구현하기 위한 컬럼2
 
--2))흐름
+-2)) 흐름
 
 ![simulFN](https://github.com/dh996/project11/assets/139844465/0b61bd2b-0b07-42ef-bed4-63bb70d1c990)
 
-01. SimulDefaultSetting
+01/ SimulDefaultSetting
 
 유저가 입력한 데이터를 토대, 유저가 고른 챔피언들의 역할군을 설정, 상대방 챔피언 뽑기 후 역할군 설정
 
-02. SimulTeamFight
+02/ SimulTeamFight
 
 최초 1회, 게임 내부 기본 데이터를 생성후 재귀함수 실행, 함수의 결과를 게임 데이터에 반영한 후 재귀함수를 다시 실행할지 결정, 실행하지 않아도 되는 경우 프로그램 종료
 
 전투 지형 설정 기능, 전투 결과로 인한 전리품 획득 기능, 기간제 버프 관리 기능, 임의의 레벨 업 기능 구현
 
-03. SimulTurn
+03/ SimulTurn
 
 첫 번째 재귀함수, 결과값을 좀 더 다양하게 연출하기 위해 만들었으며 메인 루프인 fighting을 반복실행하며 프로그램에 데이터를 누적시킴
 
 한 차례 전투루프가 끝날 때 마다 지속 가능 여부를 판단하는 기능 구현
 
-04. Fighting
+04/ Fighting
 
 선공권 수치를 참고하여 확률보정한 선제공격 정하기 기능, 지정된 전투패턴을 실행하는 기능(이 기능을 반복실행하는 것으로 다양성을 높이기 위해 재귀함수화 시킴),
 
 각 역할군 별로 다른 대미지를 주는 기능, 중간에 챔피언이 사망하면 다음 타겟으로 변경하는 기능 구현
 
-05. SimulLogging
+05/ SimulLogging
 
 기록이 필요한 구간을 상황에 맞는 형태로 DB에 기록하는 기능 구현
 
--3))개발 의의
+-3)) 개발 의의
 
 실무에서 사용되는 신기술을 익힌 것은 아니지만 기초적인 방식을 사용한 다양한 알고리즘 구현을 실현해봄으로써
 
 향후 다양한 기술들을 접했을 때 알게 된 기술들 만큼 응용할 수 있는 여지를 넓히는 데에 도움이 될 것이라 여겨짐
  
+-3) 클라이언트
+
+-1)) 시뮬 메인 페이지
+
+-2)) 시뮬 상세 페이지
