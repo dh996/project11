@@ -256,51 +256,71 @@ public class SimulController {
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ1U)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("u")) {
+							kE ++;
+							rData.setKillE(kE);
 							rData.setC1u(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ2U)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("u")) {
+							kE ++;
+							rData.setKillE(kE);
 							rData.setC2u(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ3U)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("u")) {
+							kE ++;
+							rData.setKillE(kE);
 							rData.setC3u(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ4U)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("u")) {
+							kE ++;
+							rData.setKillE(kE);
 							rData.setC4u(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ5U)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("u")) {
+							kE ++;
+							rData.setKillE(kE);
 							rData.setC5u(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ1E)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("e")) {
+							kU ++;
+							rData.setKillU(kU);
 							rData.setC1e(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ2E)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("e")) {
+							kU ++;
+							rData.setKillU(kU);
 							rData.setC2e(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ3E)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("e")) {
+							kU ++;
+							rData.setKillU(kU);
 							rData.setC3e(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ4E)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("e")) {
+							kU ++;
+							rData.setKillU(kU);
 							rData.setC4e(0);
 						}
 					}
 					if(simulLogVos.get(j).getLogs_deffender().equals(champ5E)) {
 						if(simulLogVos.get(j).getLogs_attacker().equals("e")) {
+							kU ++;
+							rData.setKillU(kU);
 							rData.setC5e(0);
 						}
 					}
