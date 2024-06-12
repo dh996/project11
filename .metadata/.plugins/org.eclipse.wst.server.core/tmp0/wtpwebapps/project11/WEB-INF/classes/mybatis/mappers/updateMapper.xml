@@ -48,43 +48,9 @@
     </resultMap> -->
 
     <!-- version에 해당하는 값을 가져오기 위한 쿼리 -->
-    <!-- <select id="versionLoad" resultMap="versionResultMap">
-        SELECT
-            uc.champs_cid,
-            uc.champs_name,
-            uc.champs_tags,
-            
-            usk.skins_id,
-            usk.skins_num,
-            usk.skins_name,
-            
-            ust.stats_hp,
-            ust.stats_hpperlevel,
-            ust.stats_mp,
-            ust.stats_mpperlevel,
-            ust.stats_movespeed,
-            ust.stats_armor,
-            ust.stats_armorperlevel,
-            ust.stats_spellblock,
-            ust.stats_spellblockperlevel,
-            ust.stats_attackrange,
-            ust.stats_hpregen,
-            ust.stats_hpregenperlevel,
-            ust.stats_mpregen,
-            ust.stats_mpregenperlevel,
-            ust.stats_crit,
-            ust.stats_critperlevel,
-            ust.stats_attackdamage,
-            ust.stats_attackdamageperlevel,
-            ust.stats_attackspeedperlevel,
-            ust.stats_attackspeed
-        FROM
-            update_champs AS uc
-        LEFT JOIN update_skins AS usk ON uc.champs_version = usk.skins_version
-        LEFT JOIN update_stats AS ust ON uc.champs_version = ust.stats_version
-        WHERE
-            uc.champs_version = #{version}
-    </select> -->
+    <select id="versionLoad" parameterType="java.lang.String" resultType="java.lang.String">
+        SELECT logs_version FROM update_logs WHERE logs_version = #{version}
+    </select>
     
     <insert id="uploadChamps" parameterType="updateChampsVo">
     

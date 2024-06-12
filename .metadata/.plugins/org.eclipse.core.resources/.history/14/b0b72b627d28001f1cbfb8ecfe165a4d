@@ -1,0 +1,237 @@
+package dh.project11.packs.admin;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import dh.project11.packs.admin.UpdateData;
+import dh.project11.packs.admin.UpdateData.ChampData;
+import dh.project11.packs.admin.UpdateData.ChampData.Skin;
+import dh.project11.packs.simul.object.TeamInfo;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+@Component
+@Repository
+public class AdminDao {
+	
+	@Autowired
+	private SqlSession sqlSessionUpdate;
+	
+	private final ObjectMapper objectMapper;
+	
+	public AdminDao(ObjectMapper objectMapper) {
+        this.objectMapper = objectMapper;
+    }
+	
+	@Transactional
+	public void versionSetting(String version) {
+		// TODO Auto-generated method stub
+		sqlSessionUpdate.insert("mapper.UpdateMapper.versionSetting", version);
+		    
+	}
+	
+	@Transactional
+	public String versionLoad(String version) {
+		// TODO Auto-generated method stub
+		return sqlSessionUpdate.selectOne("mapper.UpdateMapper.versionLoad", version);
+	}
+
+	@Transactional
+	public List<String> versionUpdate(String jsonString) {
+		// TODO Auto-generated method stub
+		List<String> keyData = new ArrayList<>();
+		try {
+            // JSON 문자열을 Object로 변환
+            Object resultObject = objectMapper.readValue(jsonString, Object.class);
+            if (resultObject instanceof Map) {
+                Map<?, ?> resultMap = (Map<?, ?>) resultObject;
+                // "data" 키의 값 가져오기
+                Object dataObject = resultMap.get("data");
+                // "data" 키의 값이 맵인지 확인
+                if (dataObject instanceof Map) {
+                    Map<?, ?> dataMap = (Map<?, ?>) dataObject;
+                    // 여기에서 필요한 처리 수행             
+                    for(Map.Entry<?,?> entry : dataMap.entrySet()) {
+                    	String key = (String) entry.getKey();
+                    	keyData.add(key);
+                    }
+                }
+            }
+        } catch (Exception e) {
+            // 예외 처리
+            e.printStackTrace();
+        }
+		return keyData;
+	}
+
+	@Transactional
+	public void uploadChampData(UpdateData data) {
+		// TODO Auto-generated method stub
+		String version = data.getVersion();
+		ChampData champData = data.getChampData();
+		String id = champData.getId();
+		String key = champData.getKey();
+		String name = champData.getName();
+		List<String> tags = champData.getTags();
+		//List<Skin> skins = champData.getSkins();
+		Map<String, Float> stats = champData.getStats();
+		
+		UpdateChampsVo updatechampVo = new UpdateChampsVo();
+		updatechampVo.setChamps_version(version);
+		updatechampVo.setChamps_cid(version+"_"+key);
+		updatechampVo.setChamps_name(name);
+		updatechampVo.setChamps_id(id);
+		updatechampVo.setChamps_tags(tags);
+		sqlSessionUpdate.insert("mapper.UpdateMapper.uploadChamps", updatechampVo);
+		sqlSessionUpdate.insert("mapper.UpdateMapper.uploadTags", updatechampVo);
+		
+	    //for (Skin skin : skins) {
+	    //	UpdateSkinsVo updateSkinsVo = new UpdateSkinsVo();
+	    //	updateSkinsVo.setSkins_version(version);
+	    //	updateSkinsVo.setSkins_cid(version+"_"+key);
+	    //	updateSkinsVo.setSkins_id(skin.getId());
+	    //	updateSkinsVo.setSkins_num(skin.getNum());
+	    //	updateSkinsVo.setSkins_name(skin.getName());
+	    //    sqlSessionUpdate.insert("mapper.UpdateMapper.uploadSkins", updateSkinsVo);
+	    //}
+	    
+//	    UpdateStatsVo updateStatsVo = new UpdateStatsVo();
+//	    updateStatsVo.setStats_version(version);
+//	    updateStatsVo.setStats_cid(version+"_"+key);
+//		updateStatsVo.setStats_hp(stats.get("hp"));
+//		updateStatsVo.setStats_hpperlevel(stats.get("hpperlevel"));
+//		updateStatsVo.setStats_mp(stats.get("mp"));
+//		updateStatsVo.setStats_mpperlevel(stats.get("mpperlevel"));
+//		updateStatsVo.setStats_movespeed(stats.get("movespeed"));
+//		updateStatsVo.setStats_armor(stats.get("armor"));
+//		updateStatsVo.setStats_armorperlevel(stats.get("armorperlevel"));
+//		updateStatsVo.setStats_spellblock(stats.get("spellblock"));
+//		updateStatsVo.setStats_spellblockperlevel(stats.get("spellblockperlevel"));
+//		updateStatsVo.setStats_attackrange(stats.get("attackrange"));
+//		updateStatsVo.setStats_hpregen(stats.get("hpregen"));
+//		updateStatsVo.setStats_hpregenperlevel(stats.get("hpregenperlevel"));
+//		updateStatsVo.setStats_mpregen(stats.get("mpregen"));
+//		updateStatsVo.setStats_mpregenperlevel(stats.get("mpregenperlevel"));
+//		updateStatsVo.setStats_crit(stats.get("crit"));
+//		updateStatsVo.setStats_critperlevel(stats.get("critperlevel"));
+//		updateStatsVo.setStats_attackdamage(stats.get("attackdamage"));
+//		updateStatsVo.setStats_attackdamageperlevel(stats.get("attackdamageperlevel"));
+//		updateStatsVo.setStats_attackspeedperlevel(stats.get("attackspeedperlevel"));
+//		updateStatsVo.setStats_attackspeed(stats.get("attackspeed"));
+//	    sqlSessionUpdate.insert("mapper.UpdateMapper.uploadStats", updateStatsVo);
+	}
+
+	public List<UpdateChampsVo> getChampList(String version) {
+		// TODO Auto-generated method stub
+	    return sqlSessionUpdate.selectList("mapper.UpdateMapper.getChampList", version);
+	}
+
+	public List<UpdateChampsVo> callPositionBuilding(TeamInfo teamInfo, String version) {
+		// TODO Auto-generated method stub
+		String champCid1 = teamInfo.getChampCid1();
+		String champCid2 = teamInfo.getChampCid2();
+		String champCid3 = teamInfo.getChampCid3();
+		String champCid4 = teamInfo.getChampCid4();
+		String champCid5 = teamInfo.getChampCid5();
+
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("version", version);
+		paramMap.put("champCid1", champCid1);
+		paramMap.put("champCid2", champCid2);
+		paramMap.put("champCid3", champCid3);
+		paramMap.put("champCid4", champCid4);
+		paramMap.put("champCid5", champCid5);
+		
+		List<UpdateChampsVo> callList = sqlSessionUpdate.selectList("mapper.UpdateMapper.getChampsDataByVersionAndIds", paramMap);
+		List<UpdateChampsVo> returnList = new ArrayList<>();
+		int intoListFlag = 1;
+		for(int i=0; i<callList.size(); i++) {
+			String cid = callList.get(i).getChamps_cid();
+			if(intoListFlag == 1 && cid.equals(champCid1)) {
+				returnList.add(callList.get(i));
+				intoListFlag ++;
+				i = -1;
+			}else if(intoListFlag == 2 && cid.equals(champCid2)) {
+				returnList.add(callList.get(i));
+				intoListFlag ++;
+				i = -1;
+			}else if(intoListFlag == 3 && cid.equals(champCid3)) {
+				returnList.add(callList.get(i));
+				intoListFlag ++;
+				i = -1;
+			}else if(intoListFlag == 4 && cid.equals(champCid4)) {
+				returnList.add(callList.get(i));
+				intoListFlag ++;
+				i = -1;
+			}else if(intoListFlag == 5 && cid.equals(champCid5)) {
+				returnList.add(callList.get(i));
+				intoListFlag ++;
+				i = -1;
+			}
+		}
+
+		return returnList;
+	}
+
+	public String getLatestVersion() {
+		// TODO Auto-generated method stub
+		List<String> versions = sqlSessionUpdate.selectList(
+				"mapper.UpdateMapper.getAllVersions");
+		return findLatestVersion(versions);
+	}
+	
+	public static String findLatestVersion(List<String> versionList) {
+        if (versionList == null || versionList.isEmpty()) {
+            return null;
+        }
+
+        int maxVersion1 = Integer.MIN_VALUE;
+        int maxVersion2 = Integer.MIN_VALUE;
+        String latestVersion = null;
+
+        for (String version : versionList) {
+            String[] numericVersionStr = version.split("\\.");
+            for(int i=0; i<numericVersionStr.length; i++) {
+                int numericVersion = convertToNumericVersion(numericVersionStr[i]);
+                boolean flag1 = false;
+                if(i == 0) {
+                	if (numericVersion > maxVersion1) {
+                        maxVersion1 = numericVersion;
+                        flag1 = true;
+                	}else if(numericVersion == maxVersion1) {
+                		flag1 = true;
+                	}
+                }
+                if(i == 1) {
+                	if (flag1 == true && numericVersion > maxVersion2) {
+                        maxVersion2 = numericVersion;
+                        latestVersion = version;
+                        break;
+                    }
+                }
+                
+            }
+
+        }
+
+        return latestVersion;
+    }
+
+    private static int convertToNumericVersion(String version) {
+        try {
+        	return Integer.parseInt(version);
+        } catch (NumberFormatException e) {
+            // 숫자로 변환할 수 없는 경우 처리
+            return Integer.MIN_VALUE;
+        }
+    }
+}

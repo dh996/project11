@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.5//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.UpdateMapper">
+
+    <insert id="versionSetting" parameterType="java.lang.String">
+        INSERT INTO update_logs (logs_version, logs_datetime) 
+        VALUES (#{version}, now())
+    </insert>     
+    
+    <!-- <resultMap id="versionResultMap" type="java.util.Map">
+        <id property="champs_cid" column="champs_cid"/>
+        <result property="name" column="champs_name"/>
+        <result property="tags" column="champs_tags" javaType="java.util.List" typeHandler="org.apache.ibatis.type.ArrayTypeHandler"/>
+    
+        skins
+        <association property="skins" javaType="java.util.Map">
+            <result property="id" column="skins_id"/>
+            <result property="num" column="skins_num"/>
+            <result property="name" column="skins_name"/>
+        </association>
+    
+        stats
+        <association property="stats" javaType="java.util.Map">
+            <result property="hp" column="stats_hp"/>
+            <result property="hpperlevel" column="stats_hpperlevel"/>
+            <result property="mp" column="stats_mp"/>
+            <result property="mpperlevel" column="stats_mpperlevel"/>
+            <result property="movespeed" column="stats_movespeed"/>
+            <result property="armor" column="stats_armor"/>
+            <result property="armorperlevel" column="stats_armorperlevel"/>
+            <result property="spellblock" column="stats_spellblock"/>
+            <result property="spellblockperlevel" column="stats_spellblockperlevel"/>
+            <result property="attackrange" column="stats_attackrange"/>
+            <result property="hpregen" column="stats_hpregen"/>
+            <result property="hpregenperlevel" column="stats_hpregenperlevel"/>
+            <result property="mpregen" column="stats_mpregen"/>
+            <result property="mpregenperlevel" column="stats_mpregenperlevel"/>
+            <result property="crit" column="stats_crit"/>
+            <result property="critperlevel" column="stats_critperlevel"/>
+            <result property="attackdamage" column="stats_attackdamage"/>
+            <result property="attackdamageperlevel" column="stats_attackdamageperlevel"/>
+            <result property="attackspeedperlevel" column="stats_attackspeedperlevel"/>
+            <result property="attackspeed" column="stats_attackspeed"/>
+        </association>
+    </resultMap> -->
+
+    <!-- version에 해당하는 값을 가져오기 위한 쿼리 -->
+    <select id="versionLoad" parameterType="java.lang.String" resultMap="java.lang.String">
+        SELECT logs_version FROM update_logs WHERE logs_version = #{version}
+    </select>
+    
+    <insert id="uploadChamps" parameterType="updateChampsVo">
+    
+        INSERT INTO update_champs
+        (
+            champs_version, champs_cid, champs_name, champs_id
+        )
+        VALUES
+        (
+            #{champs_version}, #{champs_cid}, #{champs_name}, #{champs_id}
+        )
+    </insert>
+    
+    <insert id="uploadTags" parameterType="updateChampsVo">
+    INSERT INTO update_tags
+    (
+        tags_version, tags_cid, champs_tags
+    )
+    VALUES
+    <foreach collection="champs_tags" item="tag" separator=",">
+        (#{champs_version}, #{champs_cid}, #{tag})
+    </foreach>
+    </insert>
+    
+    <insert id="uploadSkins" parameterType="updateSkinsVo">
+        INSERT INTO update_skins
+        (
+            skins_version, skins_cid, skins_id, skins_num, skins_name
+        )
+        VALUES
+        (
+            #{skins_version}, #{skins_cid}, #{skins_id}, #{skins_num}, #{skins_name}
+        )
+    </insert>
+    
+    <insert id="uploadStats" parameterType="updateStatsVo">
+        INSERT INTO update_stats
+        (
+            stats_version, stats_cid, stats_hp, stats_hpperlevel, stats_mp, 
+            stats_mpperlevel, stats_movespeed, stats_armor, stats_armorperlevel, 
+            stats_spellblock, stats_spellblockperlevel, stats_attackrange, 
+            stats_hpregen, stats_hpregenperlevel, stats_mpregen, 
+            stats_mpregenperlevel, stats_crit, stats_critperlevel, 
+            stats_attackdamage, stats_attackdamageperlevel, 
+            stats_attackspeedperlevel, stats_attackspeed
+        )
+        VALUES
+        (
+            #{stats_version}, #{stats_cid}, #{stats_hp}, #{stats_hpperlevel}, #{stats_mp}, 
+            #{stats_mpperlevel}, #{stats_movespeed}, #{stats_armor}, #{stats_armorperlevel}, 
+            #{stats_spellblock}, #{stats_spellblockperlevel}, #{stats_attackrange}, 
+            #{stats_hpregen}, #{stats_hpregenperlevel}, #{stats_mpregen}, 
+            #{stats_mpregenperlevel}, #{stats_crit}, #{stats_critperlevel}, 
+            #{stats_attackdamage}, #{stats_attackdamageperlevel}, 
+            #{stats_attackspeedperlevel}, #{stats_attackspeed}
+        )
+    </insert>
+    
+    <resultMap id="tagResultMap" type="java.lang.String">
+        <result property="champs_tags" column="champs_tags" />
+    </resultMap>
+    
+    <select id="getChampList" parameterType="java.lang.String" resultMap="champResultMap">
+        SELECT c.champs_version, c.champs_cid, c.champs_name, c.champs_id, t.champs_tags
+        FROM update_champs c
+        LEFT JOIN update_tags t ON c.champs_cid = t.tags_cid
+        WHERE c.champs_version = #{version}
+        ORDER BY c.champs_name ASC
+    </select>
+    
+    <resultMap id="champResultMap" type="UpdateChampsVo">
+        <result property="champs_version" column="champs_version"/>
+        <result property="champs_cid" column="champs_cid"/>
+        <result property="champs_name" column="champs_name"/>
+        <result property="champs_id" column="champs_id"/>
+        <collection property="champs_tags" resultMap="tagResultMap" />
+    </resultMap>
+        
+    <select id="getAllVersions" resultType="java.lang.String">
+        SELECT logs_version FROM update_logs;
+    </select>
+    
+    <select id="getChampsDataByVersionAndIds" parameterType="java.lang.String" resultMap="champResultMap">
+        SELECT c.champs_version, c.champs_cid, c.champs_name, c.champs_id, t.champs_tags
+        FROM update_champs c
+        LEFT JOIN update_tags t ON c.champs_cid = t.tags_cid
+        WHERE c.champs_version = #{version} AND c.champs_cid IN (#{champCid1}, #{champCid2}, #{champCid3}, #{champCid4}, #{champCid5})
+    </select>
+
+</mapper>
+

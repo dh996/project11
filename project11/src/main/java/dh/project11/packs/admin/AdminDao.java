@@ -40,9 +40,9 @@ public class AdminDao {
 	}
 	
 	@Transactional
-	public Map<String, Object> versionLoad(String version) {
+	public String versionLoad(String version) {
 		// TODO Auto-generated method stub
-		return (Map<String, Object>)sqlSessionUpdate.selectList("mapper.UpdateMapper.versionLoad", version);
+		return sqlSessionUpdate.selectOne("mapper.UpdateMapper.versionLoad", version);
 	}
 
 	@Transactional
@@ -194,23 +194,33 @@ public class AdminDao {
             return null;
         }
 
-        int maxVersion = Integer.MIN_VALUE;
+        int maxVersion1 = 0;
+        int maxVersion2 = 0;
         String latestVersion = null;
+        boolean flag1 = false;
 
         for (String version : versionList) {
             String[] numericVersionStr = version.split("\\.");
             for(int i=0; i<numericVersionStr.length; i++) {
                 int numericVersion = convertToNumericVersion(numericVersionStr[i]);
-                if(i>0) {
-                	if(numericVersion<10) {
-                		numericVersion *= 10;
+                
+                if(i == 0) {
+                	if (numericVersion > maxVersion1) {
+                        maxVersion1 = numericVersion;
+                        flag1 = true;
+                        maxVersion2 = 0;
+
+                	}else if(numericVersion == maxVersion1) {
+                		flag1 = true;
                 	}
                 }
-                if (numericVersion > maxVersion) {
-                    maxVersion = numericVersion;
-                    latestVersion = version;
-                    break;
+                if(i == 1) {
+                	if (flag1 == true && numericVersion > maxVersion2) {
+                        maxVersion2 = numericVersion;
+                        latestVersion = version;
+                    }
                 }
+                
             }
 
         }

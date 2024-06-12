@@ -63,14 +63,12 @@ public class AdminMainController {
 		String nextPage = "/admin/include/versionup_success="+version;
 		RestTemplate restTemplate = new RestTemplate();
 		String apiUrl = "https://ddragon.leagueoflegends.com/cdn/"+version+"/data/ko_KR/champion.json";
-		Map<String, Object> champsData = new HashMap<>();
+		String champsData = null;
 		List<String> keyData = new ArrayList<>();
 		model.addAttribute("version", version);
-		
-		try {
-	        champsData = adminService.versionLoad(version);
-	        model.addAttribute("champsData", champsData);
-	    } catch (Exception e) {
+	    champsData = adminService.versionLoad(version);
+	    model.addAttribute("champsData", champsData);
+	    if(champsData == null){
 	    	
 	    	try {
 	    		ResponseEntity<String> response = restTemplate.getForEntity(apiUrl, String.class);

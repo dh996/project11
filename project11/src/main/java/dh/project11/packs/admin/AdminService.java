@@ -13,8 +13,8 @@ public class AdminService {
 	@Autowired
 	AdminDao adminDao;
 
-	public Map<String, Object> versionLoad(String version) {
-		Map<String, Object> data = adminDao.versionLoad(version);
+	public String versionLoad(String version) {
+		String data = adminDao.versionLoad(version);
 		return data;
 	}
 
